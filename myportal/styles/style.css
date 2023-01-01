@@ -1,0 +1,27 @@
+/* colors from https: //coolors.co/476385-2b3964-ccdce0-f5b48e */
+:root{
+  --primary-color: #476385;
+  --secondary-color: #2b3964;
+  --accent1-color: #ccdce0;
+  --accent2-color: #f5b48e;
+}
+
+body{
+ max-width: 50%;
+}
+.name-box{
+ background-color: var(--secondary-color);
+ color: var(--accent1-color);
+
+}
+
+
+footer{
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+}
+
+.lesson-list{
+ border-top: 3px double var(--secondary-color);
+ border-bottom:3px double var(--secondary-color);
+}
