@@ -9,11 +9,12 @@ sans-serif; */
 /* colors from https: //coolors.co/476385-2b3964-ccdce0-f5b48e */
 :root
 {
+  /*colors: */
   --primary-color: #476385;
   --secondary-color: #2b3964;
   --accent1-color: #ccdce0;
   --accent2-color: #f5b48e;
-
+  /*fonts: */
   --heading-font: Poppins, sans-serif;
   --paragraph-font: 'Playfair Display', serif;
 }
@@ -24,6 +25,10 @@ body
  margin: auto;
  }
 
+ img{
+  padding: 15px 15px 15px 0px;
+  border-radius: 25px;
+ }
 .name-box
 {
  background-color: var(--secondary-color);
@@ -39,11 +44,6 @@ body
  display: flex;
  font-size: 2.3em;
  justify-content: space-evenly;
-}
-.julia-pic
-{
- padding: 15px 15px 15px 0px;
- border-radius: 25px;
 }
 
 .lesson-list
@@ -67,7 +67,6 @@ body
 
 .lesson-list a:hover
 {
-
   color: var(--accent2-color);
   background-color: var(--secondary-color);
 }
@@ -75,7 +74,7 @@ main
 {
  font-family: var(--paragraph-font);
 }
-.assignment-header
+h2
 {
  text-align: center;
 }
