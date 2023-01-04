@@ -11,7 +11,7 @@
 <body>
  <header>
   <div class="name-box">
-
+   <img class="julia-pic" src="images/julia.jpg" alt="picture of Julia">
    <h1>Julia Lassig</h1>
   </div>
   
@@ -19,8 +19,9 @@
  </header>
  <main>
 
-  <h2>WDD 230: Assignment Portal</h2>
-  <ul class="lesson-list">
+  <h2 class="assignment-header">WDD 230: Assignment Portal</h2>
+  <div  class="lesson-list">
+  <ul>
    <li>Lesson 1: <a href="https://codepen.io/jlassig/pen/rNrLVdR" target="blank">Activity: Applied Javascript</a></li>
    <li>Lesson 2:</li>
    <li>Lesson 3:</li>
@@ -33,14 +34,22 @@
    <li>Lesson 10:</li>
    <li>Lesson 11:</li>
   </ul>
+  </div>
 
  </main>
  <footer>
-  <h2>Julia Lassig</h2>
-  <h2>Utah</h2>
+  <div class="footer-info">
+   <p>&copy;<span id="copyright-year"></span></p>
+   <p>|</p>
+   <p>Julia Lassig</p>
+   <p>|</p>
+   <p>Utah</p>
+  </div>
+  <span id="date-mod"></span>
  </footer>
+
+<script src=scripts/portal.js></script>
+
 </body>
 </html>
 
-<script src="scripts/app.js"></script>
-"Current Date: ${dayName}, ${monthName} ${d.getDate()} ${year}";

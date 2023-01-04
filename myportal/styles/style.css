@@ -1,27 +1,129 @@
+/* fonts (from google fonts): 
+font-family: 'Playfair Display',
+serif;
+font-family: 'Poppins',
+sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+
 /* colors from https: //coolors.co/476385-2b3964-ccdce0-f5b48e */
-:root{
+:root
+{
   --primary-color: #476385;
   --secondary-color: #2b3964;
   --accent1-color: #ccdce0;
   --accent2-color: #f5b48e;
+
+  --heading-font: Poppins, sans-serif;
+  --paragraph-font: 'Playfair Display', serif;
 }
 
-body{
- max-width: 50%;
-}
-.name-box{
+body
+{
+ max-width: 40%;
+ margin: auto;
+ }
+
+.name-box
+{
  background-color: var(--secondary-color);
  color: var(--accent1-color);
-
+ border-radius: 25px;
+ text-align: center;
+ padding: 5px;
+ font-family: var(--heading-font);
+}
+.name-box
+{
+ margin-top: 20px;
+ display: flex;
+ font-size: 2.3em;
+ justify-content: space-evenly;
+}
+.julia-pic
+{
+ padding: 15px 15px 15px 0px;
+ border-radius: 25px;
 }
 
+.lesson-list
+{
+ margin: -20px 0px 30px 0px;
+ padding: 10px 0px;
+ border: 3px double var(--secondary-color);
+ border-radius: 25px;
+ line-height: 30px;
+ color: var(--secondary-color);
+ font-weight: bold;
+ background-color: var(--accent1-color);
+}
 
-footer{
+.lesson-list a
+{
+ padding: 2px 10px;
+ text-decoration: none;
+ color: var(--secondary-color);
+}
+
+.lesson-list a:hover
+{
+
+  color: var(--accent2-color);
   background-color: var(--secondary-color);
-  color: var(--accent1-color);
+}
+main
+{
+ font-family: var(--paragraph-font);
+}
+.assignment-header
+{
+ text-align: center;
+}
+footer
+{
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
+    font-family: var(--heading-font);
+  }
+.footer-info
+{
+  display: flex;
+  justify-content: center;
+}
+.footer-info p
+{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5em;
 }
 
-.lesson-list{
- border-top: 3px double var(--secondary-color);
- border-bottom:3px double var(--secondary-color);
+@media screen and (max-width: 900px)
+{
+.name-box,footer
+{
+  /* flex-direction: column; */
+  flex-flow: column wrap;
+}
+h1
+{
+  font-size: 1em;
+}
+img{
+  max-width: 80%;
+  margin-left: 15px;
+  
+}
+.footer-info p{
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+  font-size: 0.8em;
+
+}
+#date-mod{
+  font-size: 0.8em;
+}
+
 }
