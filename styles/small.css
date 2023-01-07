@@ -1,10 +1,7 @@
-/* fonts (from google fonts): 
-font-family: 'Playfair Display',
-serif;
-font-family: 'Poppins',
-sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+/* After watching the video in week 2, i put this in my html.  */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap'); */
 
 /* colors from https: //coolors.co/476385-2b3964-ccdce0-f5b48e */
 :root
@@ -16,34 +13,30 @@ sans-serif; */
   --accent2-color: #f5b48e;
   /*fonts: */
   --heading-font: Poppins, sans-serif;
-  --paragraph-font: 'Playfair Display', serif;
+  --paragraph-font: 'Playfair Display',serif;
 }
 
-body
-{
- max-width: 40%;
- margin: auto;
- }
+
 
  img{
-  padding: 15px 15px 15px 0px;
+  padding: 15px;
   border-radius: 25px;
+  max-width: 80%;
  }
+
 .name-box
 {
  background-color: var(--secondary-color);
  color: var(--accent1-color);
- border-radius: 25px;
  text-align: center;
- padding: 5px;
  font-family: var(--heading-font);
-}
-.name-box
-{
  margin-top: 20px;
  display: flex;
- font-size: 2.3em;
+ flex-flow: column wrap;
+ font-size: 1.2rem;
  justify-content: space-evenly;
+ align-items: center;
+
 }
 
 .lesson-list
@@ -51,7 +44,6 @@ body
  margin: -20px 0px 30px 0px;
  padding: 10px 0px;
  border: 3px double var(--secondary-color);
- border-radius: 25px;
  line-height: 30px;
  color: var(--secondary-color);
  font-weight: bold;
@@ -82,47 +74,29 @@ footer
 {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
-    border-radius: 25px;
-    text-align: center;
     padding: 5px;
     font-family: var(--heading-font);
+    text-align: center;
+
   }
-.footer-info
-{
+
+.footer-info{
   display: flex;
-  justify-content: center;
+  flex-flow: column wrap;
+  
 }
 .footer-info p
 {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 1.5em;
-}
-
-@media screen and (max-width: 900px)
-{
-.name-box,footer
-{
-  /* flex-direction: column; */
-  flex-flow: column wrap;
-}
-h1
-{
-  font-size: 1em;
-}
-img{
-  max-width: 80%;
-  margin-left: 15px;
-  
-}
-.footer-info p{
   padding-left: 0.5px;
   padding-right: 0px;
-  font-size: 0.8em;
-
-}
-#date-mod{
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
+ #date-mod {
+   font-size: 0.8em;
+ }
+.brackets{
+  display:none;
 }
+
+

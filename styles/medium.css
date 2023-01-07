@@ -1,0 +1,53 @@
+/* @media screen and (max-width: 480px) */
+
+@media only screen and (min-width: 32.5em){
+
+body {
+  max-width: 60%;
+  margin: auto;
+ }
+
+.name-box {
+ flex-flow: row wrap;
+ font-size: 2.8rem;
+ box-shadow: 0 0 30px #443;
+ border-radius: 25px;
+}
+/* Got the following from here: https: //cs.wellesley.edu/~cs204/readings/flex/flex-example.html    */
+img{
+ flex: 0 0 auto;
+ width: 25%;
+}
+h1{
+ flex: 1 1 auto;
+}
+
+
+.lesson-list{
+  border-radius: 25px;
+}
+
+/* This makes the brackets that "small.css" deleted visible again:  */
+.brackets {
+ display: unset;
+}
+footer{
+  box-shadow: 0 0 30px #443;
+  border-radius: 25px;
+}
+.footer-info {
+ flex-flow: row wrap;
+ justify-content: center;
+}
+
+.footer-info p {
+ padding-left: 20px;
+ padding-right: 20px;
+ font-size: 1.5em;
+
+}
+#date-mod{
+ font-size: 1.2em;
+}
+
+}
