@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px){
+
+ body{
+  max-width: 100%;
+ }
+ header{
+  font-size: 80%;
+ }
+ main{
+  display:flex;
+  flex-flow: column wrap;
+ }
+ .section2{
+  margin-top: 20px;
+ }
+  .brackets {
+   display: none;
+  }
+ .footer-info {
+  display: flex;
+  flex-flow: column wrap;
+ }
+ .footer-info p, #date-mod{
+  font-size: 1em;
+ }
+}
