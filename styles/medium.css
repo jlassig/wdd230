@@ -9,14 +9,14 @@ body {
 
 .name-box {
  flex-flow: row wrap;
- font-size: 2.8rem;
+ font-size: 1rem;
  box-shadow: 0 0 30px #443;
  border-radius: 25px;
 }
 /* Got the following from here: https: //cs.wellesley.edu/~cs204/readings/flex/flex-example.html    */
 img{
  flex: 0 0 auto;
- width: 25%;
+ width: 20%;
 }
 h1{
  flex: 1 1 auto;
@@ -43,10 +43,10 @@ footer{
 .footer-info p {
  padding-left: 20px;
  padding-right: 20px;
- font-size: 1.5em;
+ font-size: 1rem;
 }
 #date-mod{
- font-size: 1.2em;
+ font-size: .9rem;
 }
 
 }

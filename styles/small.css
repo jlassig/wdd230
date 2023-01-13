@@ -21,7 +21,7 @@
  img{
   padding: 15px;
   border-radius: 25px;
-  max-width: 80%;
+  max-width: 75%;
  }
 
 .name-box
@@ -33,7 +33,7 @@
  margin-top: 20px;
  display: flex;
  flex-flow: column wrap;
- font-size: 1.2rem;
+ font-size: 1rem;
  justify-content: space-evenly;
  align-items: center;
 
