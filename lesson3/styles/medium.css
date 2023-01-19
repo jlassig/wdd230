@@ -1,0 +1,21 @@
+
+@media (min-width: 20em){
+
+body{
+  padding: 1.5em;
+}
+
+ nav {
+  flex-direction: row;
+ }
+
+ nav a {
+  font-size: 1.1rem;
+ }
+
+ img {
+  max-width: 30%;
+ }
+
+
+}

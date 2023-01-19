@@ -1,0 +1,150 @@
+:root {
+
+
+  /*FONTS:*/
+  --heading-font: 'Fjalla One', Arial, sans-serif;
+  --paragraph-font: 'Rokkitt', Garamond, serif;
+
+  /*COLORS:*/
+  --primary-color: #2B3964;
+  --secondary-color: #E0E0E0;
+  --accent1-color: #0088FF;
+  --accent2-color: #91D17E;
+
+  --headline-color-on-white: #2B3964;
+  --headline-color-on-color: #2B3964;
+  --headline-background-color: #E0E0E0;
+
+  --paragraph-color-on-white: #2B3964;
+  --paragraph-color-on-color: #2B3964;
+  --paragraph-background-color: #91D17E;
+
+  --nav-link-color: #E0E0E0;
+  --nav-background-color: #2B3964;
+  --nav-hover-link-color: #2B3964;
+  --nav-hover-background-color: #91D17E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--paragraph-font);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+body {
+
+  margin: 0 auto;
+  font-size: .7rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  text-align: center;
+  box-shadow: 0 0 30px #333 inset;
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+nav div {
+  flex: 1 1 auto;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+nav a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  padding: 10px;
+}
+
+main {
+  padding: 10px;
+}
+
+.colors {
+  width: 100%;
+  text-align: center;
+
+}
+
+.colors th {
+  background-color: #999;
+  font-family: var(--heading-font);
+  font-size: .8em;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+
+  font-size: .8em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+.paragraph-font {
+  font-family: var(--paragraph-font);
+}
+
+.colored {
+  background-color: var(--paragraph-background-color);
+}
+
+p,
+li {
+  color: var(--paragraph-color-on-white);
+}
+
+li {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+p,
+ol {
+  padding: 10px;
+}
