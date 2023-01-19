@@ -1,16 +1,14 @@
 
-@media (min-width: 20em){
+@media (min-width: 38em){
 
 body{
   padding: 1.5em;
+  font-size: 1.3em;
+
 }
 
  nav {
   flex-direction: row;
- }
-
- nav a {
-  font-size: 1.1rem;
  }
 
  img {

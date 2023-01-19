@@ -41,9 +41,10 @@ img {
 body {
 
   margin: 0 auto;
-  font-size: .7rem;
+  font-size: 1rem;
   text-align: center;
   background-color: var(--secondary-color);
+  max-width: 1560px;
 }
 
 nav {
@@ -52,8 +53,9 @@ nav {
   box-shadow: 0 0 30px #333 inset;
   display: flex;
   flex-direction: column;
-  max-width: 960px;
   margin: 0 auto;
+  font-size: 1.8rem;
+
 
 }
 
@@ -67,7 +69,7 @@ nav a {
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  font-size: 0.8rem;
+
 }
 
 nav a:hover {
@@ -92,21 +94,21 @@ main {
 
 .colors {
   width: 100%;
-  text-align: center;
 
+  margin: 0 auto;
 }
 
 .colors th {
   background-color: #999;
   font-family: var(--heading-font);
-  font-size: .8em;
+
 }
 
 .colors td {
   width: 25%;
   height: 3em;
 
-  font-size: .8em;
+
 }
 
 .primary {
@@ -147,4 +149,7 @@ li {
 p,
 ol {
   padding: 10px;
+}
+section{
+  padding: 30px;
 }

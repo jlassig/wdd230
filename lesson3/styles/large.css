@@ -1,11 +1,12 @@
-@media (min-width: 38em) {
+@media (min-width: 62em) {
 
  body{
-  padding: 2em;
+  font-size: 1.4em;
  }
  img {
   width: 20%;
 }
+
 
 
 
