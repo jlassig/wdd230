@@ -1,0 +1,38 @@
+@media only screen and (min-width: 35rem){
+
+header img{
+ margin-top: 30px;
+}
+nav button{
+ display: none;
+}
+
+nav{
+ grid-column: 2/5;
+}
+nav ul#primaryNav{
+
+ display: flex;
+ justify-content: center;
+ /* margin-left: 2vw; */
+ border-left: 1px solid rgba(0, 0, 0, 0.3);
+
+
+}
+nav ul li a{
+ border: none;
+ border-right: 1px solid rgba(0,0,0,0.3);
+}
+.social {
+ grid-column: 5/6;
+}
+
+.header-date {
+ grid-column: 2/5;
+ margin: 0;
+}
+
+
+
+
+}

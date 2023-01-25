@@ -1,0 +1,16 @@
+@media only screen and (min-width: 64rem){
+
+ body{
+  max-width: 85%;
+  margin: auto;
+ }
+
+ nav ul li a{
+  padding: .5 1rem;
+ }
+
+
+
+
+
+}

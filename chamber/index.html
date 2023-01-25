@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rokkitt&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+ <link rel="stylesheet" href="styles/base.css">
+ <link rel="stylesheet" href="styles/medium.css">
+ <link rel="stylesheet" href="styles/large.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+   content="Syracuse Chamber of Commerce site assignment for Julia Lassig in WDD230: Web Frontend Development at BYUI. ">
+ <title>Syracuse Chamber of Commerce</title>
+</head>
+<body>
+ <header>
+
+    <img src="images/syracuse-chamber-logo.png" alt="syracuse chamber of commerce logo">
+
+    <div class="social">
+      <a href="https://facebook.com" target="_blank">
+        <img class="social-logo" src="images/facebook.png" alt="fb icon">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img class="social-logo" src="images/twitter.png" alt="twitter icon">
+      </a>
+    </div>
+         <!-- HAMBURGER ICON: -->
+         <!-- &#9776; -->
+  <nav>
+    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+    <ul id="primaryNav">
+      <li class="active"><a href="index.html">Home </a></li>
+      <li><a href="#">Discover</a></li>
+      <li><a href="#">Directory</a></li>
+      <li><a href="#">Join</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+     <div class="header-date"></div>
+  
+
+
+
+ </header>
+ <main>
+  <div class="hero">Hero with site name and call to action</div>
+  <div class="event">Event</div>
+  <div class="weather">Weather</div>
+  <div class="news-release">News Release</div>
+  <section class="spotlights">
+  <div class="spotlight1">Spotlight 1</div>
+  <div class="spotlight2">spotlight 2</div>
+   </section>
+
+
+
+ </main>
+
+
+
+ <footer>
+  <img src="images/syracuse-footer-logo.png" alt="syracuse footer logo">
+  <div class="contact-info">info@syracuse.org</div>
+  <div class="contact-info">801.807.9901</div>
+  <!-- location map:-->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.0441573532576!2d-112.08918158471533!3d41.089881822348275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87531b70852c9eb7%3A0xf249b17258a5617a!2s3176%20W%201700%20S%2C%20Syracuse%2C%20UT%2084075!5e0!3m2!1sen!2sus!4v1674547734390!5m2!1sen!2sus"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <p>&copy;<span id="copyright-year">Syracuse Chamber</span></p>
+  <p>Julia Lassig</p>
+  <p>WDD 230 Project</p>
+  <div id="date-mod"></div>
+
+
+ </footer>
+ <script src=scripts/chamber.js></script>
+</body>
+</html>
