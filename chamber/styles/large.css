@@ -6,8 +6,55 @@
  }
 
  nav ul li a{
-  padding: .5 1rem;
+  padding: 0.5rem 1rem;
  }
+
+ main{
+  grid-template-columns: 1fr 3fr 1fr;
+   grid-auto-rows: minmax(180px, auto);
+ }
+ .join, .weather, .event{
+  grid-column: 1/2;
+
+ }
+ .join{
+  grid-row:3/4;
+ }
+  .hero,
+  .news-release {
+   grid-column: 2/3;
+  }
+  .hero{
+   grid-row: 1/3;
+  }
+  .news-release{
+   grid-row: 3/4;
+  }
+  .spotlights {
+   grid-column: 3/4;
+   grid-row: 1/4;
+   flex-direction: column;
+   /* justify-content: space-evenly;
+   justify-items: stretch; */
+  }
+ .spotlight1{
+  flex: 28%
+ }
+ .spotlight2{
+  flex:28%;
+
+ }
+ .spotlight3 {
+  display: unset;
+  flex:28%;
+ }
+
+.hero, .news-release{
+ grid-column: 2/3;
+}
+.footer2 p:nth-child(3) {
+ border-right: 1px solid var(--secondary-color);
+}
 
 
 

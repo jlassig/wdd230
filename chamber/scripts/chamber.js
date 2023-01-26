@@ -8,11 +8,9 @@ const x = document.getElementById('hamburgerBtn');
 
 x.onclick=toggleMenu;
 
-
-
 //getting the date: 
 const today = new Date();
-const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+const fullDate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
 	today
 );
 //now put the current date in the HTML where it says "header-date":
@@ -25,3 +23,11 @@ document.querySelector(".header-date").innerHTML = fullDate;
 let dateModified = ('Last Modification: ' + document.lastModified);
 //then we search the document by the ID, in this case "date-mod", and put in the string found in dateModified in that spot: 
 document.getElementById("date-mod").innerHTML = dateModified;
+
+//putting the current year for the copyright:
+//first get today's date:
+const y = new Date();
+//get JUST the current year:
+const year = y.getFullYear();
+//now put the current year in the HTML where it says "copy-right-year":
+document.querySelector("#copyright-year").innerHTML = year;
