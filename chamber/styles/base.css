@@ -216,11 +216,9 @@ main section{
   list-style: none;
 }
 .event p a{
-  color: var(--secondary-color);
+  color: black;
 }
-h2{
-  color: var(--secondary-color);
-}
+
 
 
 .spotlights{
