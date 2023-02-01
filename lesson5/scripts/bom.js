@@ -1,26 +1,27 @@
 const list = document.querySelector('ul');
-const text = document.querySelector('input');
-const addChapter = document.querySelector('button');
+const input = document.querySelector('input');
+const button = document.querySelector('button');
 
-addChapter.addEventListener('click', () => {
- const myChapter = text.value;
+button.addEventListener('click', () => {
+ if(input.value !== ''){
+  const myChapter = input.value;
+  const listItem = document.createElement('li');
 
+  listItem.textContent = myChapter;
+  const deleteButton = document.createElement('button');
+  deleteButton.textContent = 'X';
 
- const listItem = document.createElement('li');
+  listItem.appendChild(deleteButton);
+  list.appendChild(listItem);
 
- listItem.textContent = myChapter;
- const deleteButton = document.createElement('button');
- deleteButton.textContent = 'X';
+  deleteButton.addEventListener('click', ()=>{
+  list.removeChild(listItem);})
 
- listItem.appendChild(deleteButton);
- list.appendChild(listItem);
-
- deleteButton.addEventListener('click', ()=>{
- list.removeChild(listItem);
+ }
  });
 
- });
 
 
-text.focus();
-text.value = '';
+
+input.focus();
+input.value = '';

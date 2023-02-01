@@ -3,6 +3,10 @@
   /* *{
     border: 1px solid pink;
   } */
+
+
+
+
  body{
   max-width: 85%;
   margin: auto;
@@ -48,15 +52,13 @@
 
   }
 
- /* .spotlight1{
-  flex: 28%
- }
- .spotlight2{
-  flex:28%;
+  .hero h1{
+    /* color: var(--primary-color); */
+    color: black;
+  }
 
- } */
  .spotlight3 {
-  display: unset;
+  display: block;
   /* flex:28%; */
   text-align: center;
   background-color: var(--accent2-color);

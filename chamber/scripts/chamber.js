@@ -3,10 +3,10 @@ function toggleMenu(){
  document.getElementById("primaryNav").classList.toggle("open");
   document.getElementById("hamburgerBtn").classList.toggle("open");
 }
-
 const x = document.getElementById('hamburgerBtn');
-
 x.onclick=toggleMenu;
+
+
 
 //getting the date: 
 const today = new Date();
@@ -25,9 +25,21 @@ let dateModified = ('Last Modification: ' + document.lastModified);
 document.getElementById("date-mod").innerHTML = dateModified;
 
 //putting the current year for the copyright:
-//first get today's date:
-const y = new Date();
+//first get today's date, we already have that listed above as "today":
 //get JUST the current year:
-const year = y.getFullYear();
-//now put the current year in the HTML where it says "copy-right-year":
+const year = today.getFullYear();
+//now put the current year in the HTML where it says "copyright-year":
 document.querySelector("#copyright-year").innerHTML = year;
+
+
+
+if (today.getDay() == 1 || today.getDay() == 2){
+  document.querySelector(".banner").classList.toggle("banner-shown");
+
+  document.querySelector(".banner-close").addEventListener('click', function() {
+  this.closest(".banner").style.display = "none";
+});
+};
+
+
+
