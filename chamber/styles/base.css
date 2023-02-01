@@ -62,6 +62,7 @@
 
 h1, h2, h3, h4{
   font-family: var(--heading-font);
+  color: black;
 }
 
 .header-grid{
@@ -85,6 +86,7 @@ nav ul li a{
 }
 nav ul li.active a {
  background-color: var(--accent1-color);
+ color: black;
 }
 nav ul li a:hover{
  background-color: var(--nav-hover-background-color);
