@@ -1,22 +1,32 @@
 @media only screen and (min-width: 64rem){
 
+  /* *{
+    border: 1px solid pink;
+  } */
  body{
   max-width: 85%;
   margin: auto;
  }
+.header-date{
+  font-size: 1.2em;
+  padding: 0.7em 0;
+  
+}
 
  nav ul li a{
   padding: 0.5rem 1rem;
+  font-size: 1.2em;
  }
 
  main{
   grid-template-columns: 1fr 3fr 1fr;
-   grid-auto-rows: minmax(180px, auto);
+   /* grid-auto-rows: minmax(120px, auto); */
  }
  .join, .weather, .event{
   grid-column: 1/2;
 
  }
+
  .join{
   grid-row:3/4;
  }
@@ -27,6 +37,7 @@
   .hero{
    grid-row: 1/3;
   }
+
   .news-release{
    grid-row: 3/4;
   }
@@ -34,19 +45,22 @@
    grid-column: 3/4;
    grid-row: 1/4;
    flex-direction: column;
-   /* justify-content: space-evenly;
-   justify-items: stretch; */
+
   }
- .spotlight1{
+
+ /* .spotlight1{
   flex: 28%
  }
  .spotlight2{
   flex:28%;
 
- }
+ } */
  .spotlight3 {
   display: unset;
-  flex:28%;
+  /* flex:28%; */
+  text-align: center;
+  background-color: var(--accent2-color);
+  padding: 1em;
  }
 
 .hero, .news-release{
@@ -56,6 +70,9 @@
  border-right: 1px solid var(--secondary-color);
 }
 
+.spotlight3 div a:hover {
+  background-color: var(--accent1-color);
+}
 
 
 
