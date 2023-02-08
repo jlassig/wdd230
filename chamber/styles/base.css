@@ -204,6 +204,9 @@ main section {
   padding: 10px;
   font-weight: bold;
 }
+.weather {
+  text-align: center;
+}
 .event ul {
   list-style: none;
 }
@@ -286,4 +289,3 @@ footer {
 .footer2 p {
   margin: 0;
 }
-

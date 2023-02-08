@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
 
- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rokkitt&display=swap" rel="stylesheet">
- <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" >
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rokkitt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rokkitt&display=swap" rel="stylesheet">
+ <link rel="stylesheet" -->
+  <!-- href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" >
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> --> 
  <link rel="stylesheet" href="styles/base.css">
  <link rel="stylesheet" href="styles/medium.css">
  <link rel="stylesheet" href="styles/large.css">
@@ -67,11 +71,15 @@
  </header>
  <main>
   <div class="hero">
-    <picture class="jensen-pond">
-      <!-- <source media="(min-width: 350px) and (max-width: 719px)" srcset="images/jensen-pond500.jpg"> -->
+    <!-- <picture class="jensen-pond">
+      <source srcset="images/jensen-pond1200.jpeg" media="(min-width: 1100px" >
       <source srcset="images/jensen-pond800.jpg" media="(min-width: 500px)" >
-      <source srcset="images/jensen-pond1200.jpeg" media="(min-width: 1001px" >
     <img src="images/jensen-pond350.jpeg" alt="jensen pond">
+    </picture> -->
+    <picture class="jensen-pond">
+      <source srcset="images/large1100.jpg" media="(min-width: 1100px)" >
+      <source srcset="images/medium800.jpg" media="(min-width: 500px)" >
+    <img src="images/small350.jpg" alt="jensen pond">
     </picture>
     <h1>Welcome to Syracuse</h1>
     <div class="join-button"><a href=join.html>Join the Chamber</a></div>
@@ -86,7 +94,20 @@
     <p>Be a sponsor as a way to increase your advertising and to give back to the local community.</p>
     <p><a href="https://www.syracuseut.gov/DocumentCenter/View/2157/Sponsor-Letter-2023-" target="blank"> --more details</a></p>
   </div>
-  <div class="weather"><img src="images/weather.jpg" alt="weather placeholder"></div>
+  <div class="weather">
+    <h2>Weather</h2>
+    <div class="temp-div"><span id="temp">30</span>&#xb0;F</div>
+    <span id="weather-type">Partly Cloudy</span>
+    <div>
+      <div class="windspeed-div">Wind Speed: <span id="windspeed">3.1</span> mph</div>
+      <div class="windchill-div">Wind Chill: <span id="windchill"></span><span id="windchill-F"></span></div>
+    </div>
+
+
+    
+    </div>
+
+
   <div class="news-release">
     <h2>News Release</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit saepe, eum labore consectetur deleniti vitae architecto minus explicabo illum optio assumenda deserunt corporis iusto praesentium in eos odit reiciendis accusamus! Praesentium possimus, reiciendis sequi mollitia suscipit, dolor cumque minima unde odit eius optio repellat enim ullam exercitationem, commodi quisquam.</p>
@@ -123,7 +144,6 @@
   <div class="join">
     <div class="join-button"><a href="join.html">Join Us!</a></div>
     <p>Discover how to join the Syracuse Chamber of Commerce and how it will benefit your organization! </p>
-
   </div>
 
 
@@ -156,5 +176,6 @@
 
  </footer>
  <script src=scripts/chamber.js></script>
+ <script src=scripts/windchill.js></script>
 </body>
 </html>
