@@ -1,11 +1,6 @@
-/* @media only screen and (min-width: 45rem){ */
-/* @media only screen and (min-width: 720px) { */
-/* @media only screen and (min-width:720px) and (max-width: 1200px) { */
-@media (min-width: 500px) and (max-width: 1000px){
 
- /* *{
-  border: 1px solid pink;
- } */
+@media (min-width: 500px){
+
 
 header, footer, main{
  margin: 1em;
@@ -28,7 +23,6 @@ nav ul#primaryNav{
 
  display: flex;
  justify-content: center;
- /* margin-left: 2vw; */
  border-left: 1px solid rgba(0, 0, 0, 0.3);
 
 

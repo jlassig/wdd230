@@ -1,11 +1,6 @@
-/* @media only screen and (min-width: 80rem){ */
+
 @media only screen and (min-width: 1001px) 
 {
-/* @media (min-width: 1001px){ */
-
-  /* *{
-    border: 1px solid pink;
-  } */
 
  body{
   max-width: 85%;
@@ -53,13 +48,11 @@
   }
 
   .hero h1{
-    /* color: var(--primary-color); */
     color: black;
   }
 
  .spotlight3 {
   display: block;
-  /* flex:28%; */
   text-align: center;
   background-color: var(--accent2-color);
   padding: 1em;
