@@ -24,12 +24,6 @@
 <body>
 
 
-
-
-
-
-
-
  <header>
 <!--  from banner video: https: //www.youtube.com/watch?v=x-LVUk2IxDU  -->
 <div class="banner">
@@ -73,7 +67,12 @@
  </header>
  <main>
   <div class="hero">
-    <img src="images/jensen-pond.jpeg" alt="jensen pond">
+    <picture class="jensen-pond">
+      <!-- <source media="(min-width: 350px) and (max-width: 719px)" srcset="images/jensen-pond500.jpg"> -->
+      <source srcset="images/jensen-pond800.jpg" media="(min-width: 500px) and (max-width: 1000px)" >
+      <source srcset="images/jensen-pond1200.jpeg" media="(min-width: 1001px" >
+    <img src="images/jensen-pond350.jpeg" alt="jensen pond">
+    </picture>
     <h1>Welcome to Syracuse</h1>
     <div class="join-button"><a href=join.html>Join the Chamber</a></div>
   </div>

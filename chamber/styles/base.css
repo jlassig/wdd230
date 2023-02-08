@@ -35,7 +35,8 @@
   display:none;
 }
 .banner-box{
-  padding-top: 15px;
+
+  padding: 1rem;
   max-width: 700px;
   margin: 0 auto;
   display: flex;
@@ -43,6 +44,7 @@
 }
 .banner-text{
   flex-grow: 1;
+
 
 }
 .banner-close{
@@ -151,17 +153,18 @@ nav ul.open {
 
 
 main{
- display: grid;
- grid-auto-rows: minmax(140px, auto);
- gap: 10px;
+  display: block;
+ /* display: grid; */
+ /* grid-auto-rows: minmax(140px, auto);
+ gap: 10px; */
  /* margin: .5rem; */
  
 }
 .hero{
   position: relative;
 }
-.hero img{
-  max-width: 100%;
+.jensen-pond img{
+  width: 100%;
   height: 100%;
   z-index: 1;
   }
@@ -193,7 +196,6 @@ main{
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5em;
-
   font-family: var(--heading-font);
   color: black;
 
@@ -297,6 +299,7 @@ padding-top: .8em;
 .footer2 p{
  margin: 0;
 }
+
 /* .footer2 p:nth-child(2){
  font-weight: bold;
  font-size: 1.2em;

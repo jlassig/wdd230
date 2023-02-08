@@ -1,11 +1,11 @@
-@media only screen and (min-width: 64rem){
+/* @media only screen and (min-width: 80rem){ */
+@media only screen and (min-width: 1001px) 
+{
+/* @media (min-width: 1001px){ */
 
   /* *{
     border: 1px solid pink;
   } */
-
-
-
 
  body{
   max-width: 85%;
@@ -24,7 +24,6 @@
 
  main{
   grid-template-columns: 1fr 3fr 1fr;
-   /* grid-auto-rows: minmax(120px, auto); */
  }
  .join, .weather, .event{
   grid-column: 1/2;
@@ -33,6 +32,7 @@
 
  .join{
   grid-row:3/4;
+
  }
   .hero,
   .news-release {
@@ -75,8 +75,5 @@
 .spotlight3 div a:hover {
   background-color: var(--accent1-color);
 }
-
-
-
 
 }
