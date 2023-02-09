@@ -32,10 +32,10 @@ const year = today.getFullYear();
 document.querySelector("#copyright-year").innerHTML = year;
 
 
-
+//creating a banner for the top of the screen that invites people to the meet-n-greet, and the banner shows on Mondays and Tuesdays. 
 if (today.getDay() == 1 || today.getDay() == 2){
   document.querySelector(".banner").classList.toggle("banner-shown");
-
+//the user can also click the close to make the banner go away and it goes away, at least until the page is reloaded. 
   document.querySelector(".banner-close").addEventListener('click', function() {
   this.closest(".banner").style.display = "none";
 });
