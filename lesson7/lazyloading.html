@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/base.css">
+ <title>Lazy Loading</title>
+</head>
+<body>
+ <h1>Progressing Loading</h1>
+ <picture>
+  <img src="images/placeholder.png" data-src="images/candy.png" alt="candy" loading="lazy">
+ </picture>
+
+ <picture>
+  <img src="images/placeholder.png" data-src="images/flowers.png" alt="bouquet of flowers and some candy" loading="lazy">
+ </picture>
+
+  <picture>
+   <img src="images/placeholder.png" data-src="images/hearts.png" alt = "hearts" loading="lazy">  
+ </picture>
+
+  <picture>
+   <img src="images/placeholder.png" data-src="images/koalaty.png" alt="koala valentine" loading="lazy">  
+ </picture>
+
+  <picture>
+   <img src="images/placeholder.png" data-src="images/love.png" alt="love" loading="lazy">  
+ </picture>
+
+ <h2>Happy Valentine's Day!</h2>
+
+ <script src="scripts/lazyload.js" defer></script>
+</body>
+</html>
