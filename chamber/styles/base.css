@@ -150,9 +150,10 @@ nav ul.open {
   place-self: center;
 }
 
-main {
+.home-grid {
   display: block;
 }
+
 .hero {
   position: relative;
 }
@@ -190,11 +191,10 @@ main {
   font-family: var(--heading-font);
   color: black;
 }
-main div {
+.home-grid div {
   border: 1px solid var(--primary-color);
 }
-main section {
-  grid-row: 5/7;
+.home-grid section {
   border: 1px solid var(--primary-color);
 }
 .event,
@@ -214,10 +214,6 @@ main section {
   color: black;
 }
 
-.spotlights {
-  display: flex;
-  flex-direction: column;
-}
 .spotlight1 {
   text-align: center;
   padding: 1em;
@@ -229,9 +225,8 @@ main section {
   border-top: 1px solid var(--primary-color);
   color: black;
   font-weight: bold;
-
   margin-top: 5px;
-  padding: none;
+  padding: 0;
 }
 .company-phone {
   margin-top: 5px;
@@ -263,6 +258,52 @@ main section {
 .join {
   display: none;
 }
+
+.discover-grid{
+
+  text-align: center;
+}
+.discover-grid h1{
+  background-color: #91d17e;
+  padding: 1em;
+}
+.discover-pictures{
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+}
+
+.discover-picture picture{
+  width: 100%;
+}
+
+.discover-pictures div{
+  flex: 1;
+}
+
+/* .syracuseinfo-box, .demographics{
+  background-color: var(--secondary-color);
+} */
+.syracuseinfo-box{
+  padding: 2em;
+}
+.demo-li{
+ list-style: none;
+ border: 2px solid var(--primary-color);
+ padding: 1em;
+
+}
+.demographics ul{
+  list-style: none;
+}
+.demographics{
+  padding: 1em;
+}
+
+
+
 
 footer {
   background-color: var(--primary-color);

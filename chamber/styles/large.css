@@ -13,7 +13,7 @@
     font-size: 1.2em;
   }
 
-  main {
+  .home-grid {
     grid-template-columns: 1fr 3fr 1fr;
   }
   .join,
