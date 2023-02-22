@@ -12,7 +12,7 @@ thead tr th{
  font-size: 1.5em;
  font-family: sans-serif;
 }
-tbody tr td{
+td{
  padding: 5px;
  width: 23%;
 }
@@ -29,4 +29,8 @@ table{
 
 tbody tr:nth-child(even){
  background-color: pink;
+}
+caption{
+ caption-side: bottom;
+ padding: 10px;
 }
