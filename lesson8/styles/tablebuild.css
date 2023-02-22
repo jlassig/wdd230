@@ -1,0 +1,32 @@
+table,td{
+ border: 1px solid black;
+ text-align: center;
+}
+thead{
+ background-color: black;
+ color: white;
+}
+
+thead tr th{
+ padding: 10px;
+ font-size: 1.5em;
+ font-family: sans-serif;
+}
+tbody tr td{
+ padding: 5px;
+ width: 23%;
+}
+tbody th{
+ padding: 10px;
+ font-size: 1.25em;
+}
+
+table{
+ width: 60%;
+ margin: auto;
+ margin-top: 8%;
+}
+
+tbody tr:nth-child(even){
+ background-color: pink;
+}

@@ -12,8 +12,18 @@ const loadImages = (image) => {
 
 //checking to see if interserctionObserver is supported on the user's screen
 //IntersectionObserver will only load target images when the user scrolls down. 
+// if ('IntersectionObserver' in window) {
+//   const observer = new IntersectionObserver((items) => {
+//     items.forEach((item) => {
+//       if (item.isIntersecting) {
+//         loadImages(item.target);
+//         observer.unobserve(item.target);
+//       }
+//     });
+//   });
+
 if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((items) => {
+  const imgObserver = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
       if (item.isIntersecting) {
         loadImages(item.target);
@@ -23,7 +33,7 @@ if ('IntersectionObserver' in window) {
   });
   //loop through each image and load it
   imagesToLoad.forEach((img) => {
-    observer.observe(img);
+    imgObserver.observe(img);
   });
   //load All the images if IntersectionObserver is not supported.
 } else {
