@@ -31,3 +31,4 @@ if (!localStorage.getItem("lastVisit")) {
 };
 //put the daysSinceString from the function above in the "dayssincelast" span tag in the html
 document.querySelector("#dayssincelast").innerHTML = getDaysSinceLast();
+

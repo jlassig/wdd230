@@ -58,6 +58,10 @@
 .banner.banner-shown {
   display: block;
 }
+.material-symbols-outlined {
+  color: var(--accent2-color);
+  font-family: var(--heading-font);
+}
 
 h1,
 h2,
@@ -65,6 +69,9 @@ h3,
 h4 {
   font-family: var(--heading-font);
   color: black;
+}
+h2 {
+  text-align: center;
 }
 
 .header-grid {
@@ -259,62 +266,135 @@ nav ul.open {
   display: none;
 }
 
-.discover-grid{
-
+.discover-grid {
   text-align: center;
 }
-.discover-grid h1{
+.discover-grid h1,
+.join-h1 {
   background-color: #91d17e;
   padding: 1em;
 }
-.discover-pictures{
+.discover-pictures {
   display: flex;
   flex-wrap: wrap;
-
-
-
 }
 
-.discover-picture picture{
+.discover-picture picture {
   width: 100%;
 }
 
-.discover-pictures div{
+.discover-pictures div {
   flex: 1;
 }
 
 /* .syracuseinfo-box, .demographics{
   background-color: var(--secondary-color);
 } */
-.syracuseinfo-box{
+.syracuseinfo-box {
   padding: 2em;
 }
-.demo-li{
- list-style: none;
- border: 2px solid var(--primary-color);
- padding: 1em;
-
+.demo-li {
+  list-style: none;
+  border: 2px solid var(--primary-color);
+  padding: 1em;
 }
-.demographics ul{
+.demographics ul {
   list-style: none;
 }
-.demographics{
+.demographics {
   padding: 1em;
 }
 
 /* discover page images */
 
-discover-img img[data-src]{
+.discover-img img[data-src] {
   filter: blur(0.2em);
 }
 
-discover-img img{
-  filter:blur(0em);
+.discover-img img {
+  filter: blur(0em);
   transition: filter 0.5s;
 }
 
+/* Join page */
+.join-h1 {
+  text-align: center;
+}
 
+.membership-div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.membership-div {
+  padding: 2rem;
+}
 
+/* --------FORM---- */
+
+.asterik {
+  /* color: #AA4465; */
+  /* color: #B95071; */
+  color: #a71113;
+}
+form {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 2px solid var(--accent1-color);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+form legend {
+  color: var(--accent1-color);
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: var(--primary-color);
+}
+form label.top input,
+textarea {
+  display: block;
+  font-size: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: var(--primary-color);
+}
+form input.submitBtn {
+  border: none;
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  display: block;
+  margin: auto;
+  width: 96%;
+  max-width: 20rem;
+}
+
+/* thankyou page */
+.thank-grid {
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+  padding: 2rem;
+}
 
 footer {
   background-color: var(--primary-color);

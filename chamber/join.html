@@ -1,151 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- for my google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rokkitt&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- for my google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rokkitt&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" > -->
 
- <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" > -->
+    <!-- normalize my code: -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- my stylesheets (for responsive design) -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <!-- for the favicon: -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
- <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Syracuse Chamber of Commerce site designed by Julia Lassig."
+    />
 
- <!-- normalize my code: -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
- <!-- my stylesheets (for responsive design) -->
- <link rel="stylesheet" href="styles/base.css">
- <link rel="stylesheet" href="styles/medium.css">
- <link rel="stylesheet" href="styles/large.css">
- <!-- for the favicon: -->
- <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Syracuse Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+      <!--  from banner video: https: //www.youtube.com/watch?v=x-LVUk2IxDU  -->
+      <div class="banner">
+        <div class="banner-box">
+          <div class="banner-text">
+            Come join us for the Chamber Meet-n-Greet every Wednesday at 7:00
+            p.m.
+            <button class="banner-close" type="button">
+              <span class="material-symbols-outlined"> X </span>
+            </button>
+          </div>
+        </div>
+      </div>
 
+      <div class="header-grid">
+        <div class="header-img-div">
+          <img
+            src="images/syracuse-chamber-logo.webp"
+            alt="syracuse chamber of commerce logo"
+          />
+        </div>
 
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-   content="Syracuse Chamber of Commerce site designed by Julia Lassig.">
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img class="social-logo" src="images/facebook.png" alt="fb icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img
+              class="social-logo"
+              src="images/twitter.png"
+              alt="twitter icon"
+            />
+          </a>
+        </div>
+        <!-- HAMBURGER ICON:  &#9776; -->
+        <div>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        </div>
+        <nav>
+          <ul id="primaryNav">
+            <li><a href="index.html">Home </a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-date"></div>
+      </div>
+    </header>
 
- <title>Syracuse Chamber of Commerce</title>
-</head>
-<body>
+    <main class="join-box">
+      <div class="join-h1"><h1>Join the Chamber today</h1></div>
 
+      <div>
+        <h2>Enter your info to Join:</h2>
+        <form class="join-form" method="get" action="thankyou.html">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label class="top"
+              >First Name<span class="asterik">*</span
+              ><input type="text" name="fname" required
+            /></label>
+            <label class="top"
+              >Last Name<span class="asterik">*</span
+              ><input type="text" name="lname" required
+            /></label>
+            <label class="top"
+              >Cell Phone<span class="asterik">*</span
+              ><input type="tel" name="phone" placeholder="1111111111" required
+            /></label>
+            <label class="top"
+              >Email<span class="asterik">*</span
+              ><input
+                type="email"
+                name="email"
+                placeholder="example@email.com"
+                required
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Business Information</legend>
+            <label class="top"
+              >Business Name<span class="asterik">*</span
+              ><input type="text" name="company" required
+            /></label>
 
- <header>
-<!--  from banner video: https: //www.youtube.com/watch?v=x-LVUk2IxDU  -->
-<div class="banner">
-  <div class="banner-box">
-    <div class="banner-text">Come join us for the Chamber Meet-n-Greet every Wednesday at 7:00 p.m.
-    </div>
-    <button class="banner-close" type="button">
-      <span class="material-symbols-outlined">
-        close
-      </span>
-    </button>
-  </div>
-</div>
+            <label class="top"
+              >Please describe your business<textarea
+                name="businessDescription"
+                rows="4"
+                cols="30"
+              ></textarea>
+            </label>
 
-  <div class="header-grid">
-    <div class="header-img-div"><img src="images/syracuse-chamber-logo.webp" alt="syracuse chamber of commerce logo"></div>
+            <label class="top"
+              >Business Position Title:<input
+                type="text"
+                name="businessTitle"
+                pattern="[A-Za-z\s\-]{7,}"
+            /></label>
+          </fieldset>
 
-    <div class="social">
-      <a href="https://facebook.com" target="_blank">
-        <img class="social-logo" src="images/facebook.png" alt="fb icon">
-      </a>
-      <a href="https://twitter.com" target="_blank">
-        <img class="social-logo" src="images/twitter.png" alt="twitter icon">
-      </a>
-    </div>
-         <!-- HAMBURGER ICON:  &#9776; -->
-  <div><button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button></div>
-  <nav>
-    <ul id="primaryNav">
-      <li><a href="index.html">Home </a></li>
-      <li><a href="discover.html">Discover</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li class="active"><a href="join.html">Join</a></li>
-      <li><a href="contactus.html">Contact</a></li>
-    </ul>
-  </nav>
- <div class="header-date"></div>
-</div>
+          <fieldset>
+            <legend>Membership Information</legend>
+            <div>Choose your membership level:</div>
+            <label class="sbs"
+              ><input type="radio" name="membership" value="gold" /> Gold</label
+            >
+            <label class="sbs"
+              ><input type="radio" name="membership" value="silver" />
+              Silver</label
+            >
+            <label class="sbs"
+              ><input type="radio" name="membership" value="bronze" />
+              Bronze</label
+            >
+            <label class="sbs"
+              ><input type="radio" name="membership" value="nonprofit" />
+              Non-Profit</label
+            >
+          </fieldset>
 
+          <input type="hidden" id="date" name="date" />
+          <input type="submit" value="Join Now" class="submitBtn" />
+        </form>
+      </div>
 
- </header>
- <main class="join-grid">
- <form class="join-form">
-  <label for="firstName">First Name:</label>
-  <input type="text" id="firstName" name="firstName" required>
-  <label for="lastName">Last Name:</label>
-  <input type="text" id="lastName" name="lastName" required>
-  
-  <!-- NEEDS A REGEX: -->
-  <label for="businessTitle">Business Position Title:</label>
-  <input type="text" id="businessTitle" name="businessTitle" >
-  <!-- NEEDS A PLACEHOLDER!! -->
-  <label for="userEmail">Email:</label>
-  <input type="email" id="userEmail" name="userEmail" required>
+      <div class="membership-div">
+        <h2>Membership Levels:</h2>
 
-  <label for="phone">Cell Phone:</label>
-  <input type="tel" id="phone" name="phone" required>
-  
-  <label for="businessName">Business Name:</label>
-  <input type="text" id="businessName" name="businessName" required>
+        <h3>Gold : $1500 per year</h3>
+        <ul>
+          <li>Ribbon Cutting ceremony.</li>
+          <li>
+            Access to premier advertising at events, including Heritage Days,
+            Pumpkin Walk and the Antelope Island Bike Race
+          </li>
+          <li>Discounts on insurances, office supplies, marketing and more</li>
+          <li>Advertising in the Syracuse City monthly periodical</li>
+          <li>Plus, everything in the Silver Level</li>
+        </ul>
 
-  <label for="membership">Choose your membership level:</label>
-  <select id="membership" name="membership">
-   <option value="nonprofit">Non-profit</option>
-   <option value="bronze">Bronze</option>
-   <option value="silver">Silver</option>
-   <option value="gold">Gold</option>
-  </select>
+        <h3>Silver : $1000 per year</h3>
+        <ul>
+          <li>
+            Quarterly Trainings to improve marketing and grow your business
+          </li>
+          <li>Free spot at the Farmer's Market</li>
+          <li>Advertising on the Chamber Home Page</li>
+          <li>Plus, everything in the Bronze level</li>
+        </ul>
 
-  <label for="businessDescription">Please describe your business:</label>
-  <textarea id="businessDescription" name="businessDescription" rows="4" cols="30"></textarea>
+        <h3>Bronze : $500 per year</h3>
+        <ul>
+          <li>Weekly email with business and advertising opportunities</li>
+          <li>Weekly Meet-n-Greets</li>
+          <li>Membership certificate</li>
+          <li>Advertising on the Chamber social media sites</li>
+          <li>Listing in the directory</li>
+        </ul>
 
-  <input type="hidden" id="dateTime" name="dateTime">
+        <h3>Non-Profit : No cost</h3>
+        <ul>
+          <li>
+            Quarterly Trainings to improve marketing and grow your business
+          </li>
+          <li>Free spot at the Farmer's Market</li>
+          <li>Discounts on insurances, office supplies, marketing and more</li>
+          <li>Plus, everything in the Bronze level</li>
+        </ul>
+      </div>
+    </main>
 
-  <input type="submit" value="Submit">
+    <footer>
+      <div class="footer1">
+        <img src="images/syracuse-footer-logo.png" alt="syracuse footer logo" />
+        <div class="info-box">
+          <div class="contact-info">info@syracuse.org</div>
+          <div class="contact-info">801.807.9901</div>
+          <!-- location map:-->
+          <div class="location">
+            <i class="fa fa-map-pin"></i>
+            <a href="https://goo.gl/maps/r4Kv8jN919UEyRyE8" target="blank">
+              Location Map</a
+            >
+          </div>
+        </div>
+      </div>
 
-</form>
+      <div class="footer2">
+        <p>&copy;<span id="copyright-year"></span> Syracuse Chamber</p>
+        <p>Julia Lassig</p>
+        <p>WDD 230 Project</p>
+        <div id="date-mod"></div>
+      </div>
+    </footer>
 
-<div>
- <h2>Membership Levels:</h2>
- <ul>
-  <li>Non-Profit: This level is only for non-profit organizations.</li>
-  <li>Bronze: This level gives you a </li>
- </ul>
-</div>
-
-
- </main>
-
-
-
- <footer>
-  <div class="footer1">
-    <img src="images/syracuse-footer-logo.png" alt="syracuse footer logo">
-    <div class="info-box">
-    <div class="contact-info">info@syracuse.org</div>
-    <div class="contact-info">801.807.9901</div>
-    <!-- location map:-->
-    <div class="location">
-      <i class="fa fa-map-pin"></i>
-      <a href="https://goo.gl/maps/r4Kv8jN919UEyRyE8" target="blank"> Location Map</a>
-    </div>
-    </div>
-  </div>
-
-  <div class="footer2">
-    <p>&copy;<span id="copyright-year"></span> Syracuse Chamber</p>
-    <p>Julia Lassig</p>
-    <p>WDD 230 Project</p>
-    <div id="date-mod"></div>
-  </div>
- </footer>
-
-
- <script src=scripts/chamber.js defer></script>
-</body>
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/joindate.js" defer></script>
+  </body>
 </html>

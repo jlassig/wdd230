@@ -1,111 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- for my google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rokkitt&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- for my google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rokkitt&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" > -->
 
- <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" > -->
+    <!-- normalize my code: -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- my stylesheets (for responsive design) -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <!-- for the favicon: -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
- <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Syracuse Chamber of Commerce site designed by Julia Lassig."
+    />
 
- <!-- normalize my code: -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
- <!-- my stylesheets (for responsive design) -->
- <link rel="stylesheet" href="styles/base.css">
- <link rel="stylesheet" href="styles/medium.css">
- <link rel="stylesheet" href="styles/large.css">
- <!-- for the favicon: -->
- <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Syracuse Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+      <!--  from banner video: https: //www.youtube.com/watch?v=x-LVUk2IxDU  -->
+      <div class="banner">
+        <div class="banner-box">
+          <div class="banner-text">
+            Come join us for the Chamber Meet-n-Greet every Wednesday at 7:00
+            p.m.
+            <button class="banner-close" type="button">
+              <span class="material-symbols-outlined"> X </span>
+            </button>
+          </div>
+        </div>
+      </div>
 
+      <div class="header-grid">
+        <div class="header-img-div">
+          <img
+            src="images/syracuse-chamber-logo.webp"
+            alt="syracuse chamber of commerce logo"
+          />
+        </div>
 
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-   content="Syracuse Chamber of Commerce site designed by Julia Lassig.">
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img class="social-logo" src="images/facebook.png" alt="fb icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img
+              class="social-logo"
+              src="images/twitter.png"
+              alt="twitter icon"
+            />
+          </a>
+        </div>
+        <!-- HAMBURGER ICON:  &#9776; -->
+        <div>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        </div>
+        <nav>
+          <ul id="primaryNav">
+            <li><a href="index.html">Home </a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-date"></div>
+      </div>
+    </header>
+    <main class="thank-grid">
+      <h1>Thank you!</h1>
+      <p>
+        Thank you for joining the Syracuse Chamber of Commerce. We look forward
+        to collaborating with you and your business to help your business and
+        our community grow.
+      </p>
+    </main>
 
- <title>Syracuse Chamber of Commerce</title>
-</head>
-<body>
+    <footer>
+      <div class="footer1">
+        <img src="images/syracuse-footer-logo.png" alt="syracuse footer logo" />
+        <div class="info-box">
+          <div class="contact-info">info@syracuse.org</div>
+          <div class="contact-info">801.807.9901</div>
+          <!-- location map:-->
+          <div class="location">
+            <i class="fa fa-map-pin"></i>
+            <a href="https://goo.gl/maps/r4Kv8jN919UEyRyE8" target="blank">
+              Location Map</a
+            >
+          </div>
+        </div>
+      </div>
 
+      <div class="footer2">
+        <p>&copy;<span id="copyright-year"></span> Syracuse Chamber</p>
+        <p>Julia Lassig</p>
+        <p>WDD 230 Project</p>
+        <div id="date-mod"></div>
+      </div>
+    </footer>
 
- <header>
-<!--  from banner video: https: //www.youtube.com/watch?v=x-LVUk2IxDU  -->
-<div class="banner">
-  <div class="banner-box">
-    <div class="banner-text">Come join us for the Chamber Meet-n-Greet every Wednesday at 7:00 p.m.
-    </div>
-    <button class="banner-close" type="button">
-      <span class="material-symbols-outlined">
-        close
-      </span>
-    </button>
-  </div>
-</div>
-
-  <div class="header-grid">
-    <div class="header-img-div"><img src="images/syracuse-chamber-logo.webp" alt="syracuse chamber of commerce logo"></div>
-
-    <div class="social">
-      <a href="https://facebook.com" target="_blank">
-        <img class="social-logo" src="images/facebook.png" alt="fb icon">
-      </a>
-      <a href="https://twitter.com" target="_blank">
-        <img class="social-logo" src="images/twitter.png" alt="twitter icon">
-      </a>
-    </div>
-         <!-- HAMBURGER ICON:  &#9776; -->
-  <div><button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button></div>
-  <nav>
-    <ul id="primaryNav">
-      <li><a href="index.html">Home </a></li>
-      <li><a href="discover.html">Discover</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li class="active"><a href="join.html">Join</a></li>
-      <li><a href="contactus.html">Contact</a></li>
-    </ul>
-  </nav>
- <div class="header-date"></div>
-</div>
-
-
- </header>
- <main class="join-grid">
- 
-  <h1>Thank you! </h1>
-  <p>Thank you for joining the Syracuse Chamber of Commerce. We look forward to collaborating with you and your business to help your business and our community grow. </p>
-
-
- </main>
-
-
-
- <footer>
-  <div class="footer1">
-    <img src="images/syracuse-footer-logo.png" alt="syracuse footer logo">
-    <div class="info-box">
-    <div class="contact-info">info@syracuse.org</div>
-    <div class="contact-info">801.807.9901</div>
-    <!-- location map:-->
-    <div class="location">
-      <i class="fa fa-map-pin"></i>
-      <a href="https://goo.gl/maps/r4Kv8jN919UEyRyE8" target="blank"> Location Map</a>
-    </div>
-    </div>
-  </div>
-
-  <div class="footer2">
-    <p>&copy;<span id="copyright-year"></span> Syracuse Chamber</p>
-    <p>Julia Lassig</p>
-    <p>WDD 230 Project</p>
-    <div id="date-mod"></div>
-  </div>
- </footer>
-
-
- <script src=scripts/chamber.js defer></script>
-</body>
+    <script src="scripts/chamber.js" defer></script>
+  </body>
 </html>

@@ -64,4 +64,14 @@
   .spotlight3 div a:hover {
     background-color: var(--accent1-color);
   }
+
+  form label.top input {
+    padding: 0.25rem 0;
+  }
+  form label.sbs {
+    padding: 0.4rem 0;
+  }
+  .join-box {
+    gap: 2.5rem;
+  }
 }
