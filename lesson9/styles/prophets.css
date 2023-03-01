@@ -12,6 +12,7 @@ h1{
 
 .cards{
 display: grid;
+grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 gap: 10px;
 max-width: 95%;
 margin: auto;
@@ -38,10 +39,7 @@ section{
 /* medium */
 @media only screen and (min-width: 800px)
 {
- .cards{
-  grid-template-columns: 1fr 1fr;
 
- }
  h1{
   max-width: 80%;
   margin: auto;
@@ -54,8 +52,6 @@ section{
 @media only screen and (min-width: 1200px) 
 {
 
- .cards {
-   grid-template-columns: repeat(4, 1fr);
-  }
+
 
 }
