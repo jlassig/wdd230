@@ -1,0 +1,116 @@
+{
+  "companies": [
+    {
+
+      "company" :"The Bird",
+      "phone":"385.477.8663",
+      "address": "2432 W 1700 S",
+      "cityState":"Syracuse, UT 84075",
+      "url":"https://www.lovethebird.com/",
+      "imageSrc": "/chamber/images/thebird-logo.jpg",
+      "imageAlt":"The Bird logo",
+      "membershiplevel":"silver"
+
+    },
+    {
+      "company" : "The Rush Funplex",
+      "phone" : "801.779.2695",
+      "address" : "1806 S 2000 W",
+      "cityState" : "Syracuse, UT 84075",
+      "url" : "https://www.therushfunplex.com/",
+      "imageSrc" : "/chamber/images/rush-logo.jpg",
+      "imageAlt" : "The Rush Funplex logo",
+      "membershiplevel" : "gold"
+
+    },
+    {
+      "company" : "UEC Theater",
+      "phone" : "801.773.0836",
+      "address" : "2428 W 1700 S",
+      "cityState" : "Syracuse, UT 84075",
+      "url" : "https://www.uecmovies.com/",
+      "imageSrc" : "/chamber/images/uec.logo.jpg",
+      "imageAlt" : "UEC Theaters logo",
+      "membershiplevel" : "bronze"
+
+    },
+    {
+      "company" : "Syracuse Museum",
+      "phone" : "801.614.9674",
+      "address" : "1891 W 1700 S",
+      "cityState" : "Syracuse, UT 84075",
+      "url" : "https://www.syracuseut.gov/243/Syracuse-City-Museum",
+      "imageSrc" : "/chamber/images/museum-logo.jpg",
+      "imageAlt" : "Syracuse Museum logo",
+      "membershiplevel" : "non-profit"
+
+    },
+    {
+      "company" : "Thai Jasmine Restaurant",
+      "phone" : "801.825.2719",
+      "address" : "1662 S 2000 W",
+      "cityState" : "Syracuse, UT 84075",
+      "url" : "https://www.facebook.com/people/Thai-Jasmine-Restaurant/100063790503089/",
+      "imageSrc" : "/chamber/images/thai-logo.jpg",
+      "imageAlt" : "Thai Jasmine logo",
+      "membershiplevel" : "bronze"
+
+    },
+        {
+      "company" : "The Corner Noodle",
+      "phone" : "801.773.4054",
+      "address" : "1588 S 2000 W",
+      "cityState" : "Syracuse, UT 84075",
+      "url" : "https://cornernoodle.com/",
+      "imageSrc" : "/chamber/images/cornernoodle-logo.jpg",
+      "imageAlt" : "The Corner Noodle Logo",
+      "membershiplevel" : "silver"
+
+    },
+            {
+      "company" : "Wasatch Prints",
+      "phone" : "801.719.7453",
+      "address" : "325 W 1700 S, Suite 4",
+      "cityState" : "Clearfield, UT 84015",
+      "url" : "https://wasatchprints.com/",
+      "imageSrc" : "/chamber/images/wasatchprint-logo.jpg",
+      "imageAlt" : "Wasatch Prints logo",
+      "membershiplevel" : "gold'"
+
+    },
+            {
+      "company" : "Lifetime Store",
+      "phone" : "801.728.1900",
+      "address" : "Freeport Center H, 12",
+      "cityState" : "Clearfield, UT 84015",
+      "url" : "https://www.lifetime.com/",
+      "imageSrc" : "/chamber/images/lifetime-logo.jpg",
+      "imageAlt" : "Lifetime logo",
+      "membershiplevel" : "gold"
+
+    },
+            {
+      "company" : "Tanner Clinic",
+      "phone" : "801.773.4840",
+      "address" : "2038 W 1900 S",
+      "cityState" : "Syracuse, UT 84075",
+      "url" : "https://tannerclinic.com/",
+      "imageSrc" : "/chamber/images/tannerclinic.jpg",
+      "imageAlt" : "Tanner Clinic logo",
+      "membershiplevel" : "gold"
+
+    },
+            {
+      "company" : "Hug-Hes Cafe",
+      "phone" : "801.896.0661",
+      "address" : "2432 W 1700 S",
+      "cityState" : "Syracuse, UT 84075",
+      "url" : "https://www.hughescafe.com/",
+      "imageSrc" : "/chamber/images/hughes-logo",
+      "imageAlt" : "Hug-Hes Cafe logo",
+      "membershiplevel" : "bronze"
+
+    }
+
+  ]
+}
