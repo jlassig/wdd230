@@ -73,7 +73,7 @@
       "address" : "325 W 1700 S, Suite 4",
       "cityState" : "Clearfield, UT 84015",
       "url" : "https://wasatchprints.com/",
-      "imageSrc" : "/chamber/images/wasatchprint-logo.jpg",
+      "imageSrc" : "/chamber/images/wasatchprints-logo.jpg",
       "imageAlt" : "Wasatch Prints logo",
       "membershiplevel" : "gold'"
 
@@ -106,7 +106,7 @@
       "address" : "2432 W 1700 S",
       "cityState" : "Syracuse, UT 84075",
       "url" : "https://www.hughescafe.com/",
-      "imageSrc" : "/chamber/images/hughes-logo",
+      "imageSrc" : "/chamber/images/hughes-logo.jpg",
       "imageAlt" : "Hug-Hes Cafe logo",
       "membershiplevel" : "bronze"
 

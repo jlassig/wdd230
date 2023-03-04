@@ -144,14 +144,14 @@ nav ul.open {
   color: black;
   grid-column: 1/4;
   margin: 10px;
-  padding: 5px;
+  padding: .25em;
   text-align: center;
 }
 
 .social-logo {
   border-radius: 30px;
   width: 40px;
-  padding: 8px;
+  padding: .5em;
 }
 .social {
   place-self: center;
@@ -188,7 +188,7 @@ nav ul.open {
   border-radius: 10px;
   box-shadow: 4px 4px 12px 3px var(--primary-color);
   max-width: 20rem;
-  padding: 5px;
+  padding: .5em;
 }
 
 .join-button a {
@@ -208,7 +208,7 @@ nav ul.open {
 .news-release {
   text-align: center;
   background-color: var(--accent1-color);
-  padding: 10px;
+  padding: 1em;
   font-weight: bold;
 }
 .weather {
@@ -227,29 +227,11 @@ nav ul.open {
   background-color: var(--accent2-color);
 }
 
-.company-info {
-  border: none;
-  border-top: 1px solid var(--primary-color);
-  color: black;
-  font-weight: bold;
-  margin-top: 5px;
-  padding: 0;
-}
-.company-phone {
-  margin-top: 5px;
-}
-.company-info a {
-  color: black;
-  padding: 10px;
-}
 .spotlight1 div a:hover {
   background-color: var(--accent1-color);
 }
 .spotlight2 div a:hover {
   background-color: var(--accent2-color);
-}
-.company-site {
-  text-decoration: none;
 }
 
 .spotlight2 {
@@ -266,13 +248,16 @@ nav ul.open {
   display: none;
 }
 
-.discover-grid {
+.discover-grid,
+.thanks-grid,
+.directory-grid {
   text-align: center;
 }
-.discover-grid h1,
-.join-h1 {
+
+.basic-grid h1 {
   background-color: #91d17e;
   padding: 1em;
+  text-align: center;
 }
 .discover-pictures {
   display: flex;
@@ -287,9 +272,6 @@ nav ul.open {
   flex: 1;
 }
 
-/* .syracuseinfo-box, .demographics{
-  background-color: var(--secondary-color);
-} */
 .syracuseinfo-box {
   padding: 2em;
 }
@@ -317,9 +299,6 @@ nav ul.open {
 }
 
 /* Join page */
-.join-h1 {
-  text-align: center;
-}
 
 .membership-div ul {
   display: flex;
@@ -391,12 +370,77 @@ form input.submitBtn {
   max-width: 20rem;
 }
 
-/* thankyou page */
-.thank-grid {
-  text-align: center;
-  max-width: 60%;
-  margin: auto;
-  padding: 2rem;
+/*------------- directory page -------------*/
+.companyGrid, .companyList {
+  color: black;
+  padding: 1em;
+}
+
+.company-phone {
+  margin-top: 5px;
+}
+.company-site {
+  text-decoration: none;
+}
+
+.companyGrid {
+  background-color: var(--accent2-color);
+}
+.companyCard {
+  background-color: var(--secondary-color);
+}
+
+.companyGrid > * {
+  padding: 1.5em;
+  border: 5px solid var(--accent1-color);
+  transition: box-shadow 180ms ease-in;
+  margin: 30px;
+}
+
+.companyGrid > *:hover {
+  box-shadow: 0 0 0 10px var(--accent1-color);
+}
+
+.getList,
+.getGrid {
+  background-color: var(--primary-color);
+  width: 100px;
+  color: white;
+  padding: .6em;
+  border-radius: 20px;
+  font-size: 1.3em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+
+.companyList > *:nth-child(even) {
+  background-color: var(--accent2-color);
+}
+.companyList > *:nth-child(odd) {
+  background-color: var(--accent1-color);
+}
+
+.companyList div {
+  padding: 0.1em;
+}
+
+
+/* https: //www.w3docs.com/snippets/css/how-to-wrap-words-in-a-div-tag-with-css.html#:~:text=If%20you've%20faced%20the,need%20the%20word%2Dwrap%20property. */
+/* added to the grid and list so the website wraps neater instead of spilling out of the box.  */
+.website-div {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.website-div a:visited {
+  color: blue;
 }
 
 footer {
@@ -405,9 +449,7 @@ footer {
   text-align: center;
   padding: 0.8em;
 }
-.fa-map-pin {
-  color: red;
-}
+
 .location a {
   text-decoration: none;
   color: var(--secondary-color);
