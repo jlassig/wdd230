@@ -6,8 +6,8 @@
       "phone":"385.477.8663",
       "address": "2432 W 1700 S",
       "cityState":"Syracuse, UT 84075",
-      "url":"https://www.lovethebird.com/",
-      "imageSrc": "/chamber/images/thebird-logo.jpg",
+      "url":"https://www.lovethebird.com",
+      "imageSrc": "./chamber/images/thebird-logo.jpg",
       "imageAlt":"The Bird logo",
       "membershiplevel":"silver"
 
@@ -17,8 +17,8 @@
       "phone" : "801.779.2695",
       "address" : "1806 S 2000 W",
       "cityState" : "Syracuse, UT 84075",
-      "url" : "https://www.therushfunplex.com/",
-      "imageSrc" : "/chamber/images/rush-logo.jpg",
+      "url" : "https://www.therushfunplex.com",
+      "imageSrc" : "./chamber/images/rush-logo.jpg",
       "imageAlt" : "The Rush Funplex logo",
       "membershiplevel" : "gold"
 
@@ -28,8 +28,8 @@
       "phone" : "801.773.0836",
       "address" : "2428 W 1700 S",
       "cityState" : "Syracuse, UT 84075",
-      "url" : "https://www.uecmovies.com/",
-      "imageSrc" : "/chamber/images/uec.logo.jpg",
+      "url" : "https://www.uecmovies.com",
+      "imageSrc" : "./chamber/images/uec.logo.jpg",
       "imageAlt" : "UEC Theaters logo",
       "membershiplevel" : "bronze"
 
@@ -40,7 +40,7 @@
       "address" : "1891 W 1700 S",
       "cityState" : "Syracuse, UT 84075",
       "url" : "https://www.syracuseut.gov/243/Syracuse-City-Museum",
-      "imageSrc" : "/chamber/images/museum-logo.jpg",
+      "imageSrc" : "./chamber/images/museum-logo.jpg",
       "imageAlt" : "Syracuse Museum logo",
       "membershiplevel" : "non-profit"
 
@@ -50,8 +50,8 @@
       "phone" : "801.825.2719",
       "address" : "1662 S 2000 W",
       "cityState" : "Syracuse, UT 84075",
-      "url" : "https://www.facebook.com/people/Thai-Jasmine-Restaurant/100063790503089/",
-      "imageSrc" : "/chamber/images/thai-logo.jpg",
+      "url" : "https://www.facebook.com/people/Thai-Jasmine-Restaurant/100063790503089",
+      "imageSrc" : "./chamber/images/thai-logo.jpg",
       "imageAlt" : "Thai Jasmine logo",
       "membershiplevel" : "bronze"
 
@@ -61,8 +61,8 @@
       "phone" : "801.773.4054",
       "address" : "1588 S 2000 W",
       "cityState" : "Syracuse, UT 84075",
-      "url" : "https://cornernoodle.com/",
-      "imageSrc" : "/chamber/images/cornernoodle-logo.jpg",
+      "url" : "https://cornernoodle.com",
+      "imageSrc" : "./chamber/images/cornernoodle-logo.jpg",
       "imageAlt" : "The Corner Noodle Logo",
       "membershiplevel" : "silver"
 
@@ -72,8 +72,8 @@
       "phone" : "801.719.7453",
       "address" : "325 W 1700 S, Suite 4",
       "cityState" : "Clearfield, UT 84015",
-      "url" : "https://wasatchprints.com/",
-      "imageSrc" : "/chamber/images/wasatchprints-logo.jpg",
+      "url" : "https://wasatchprints.com",
+      "imageSrc" : "./chamber/images/wasatchprints-logo.jpg",
       "imageAlt" : "Wasatch Prints logo",
       "membershiplevel" : "gold'"
 
@@ -83,8 +83,8 @@
       "phone" : "801.728.1900",
       "address" : "Freeport Center H, 12",
       "cityState" : "Clearfield, UT 84015",
-      "url" : "https://www.lifetime.com/",
-      "imageSrc" : "/chamber/images/lifetime-logo.jpg",
+      "url" : "https://www.lifetime.com",
+      "imageSrc" : "./chamber/images/lifetime-logo.jpg",
       "imageAlt" : "Lifetime logo",
       "membershiplevel" : "gold"
 
@@ -94,8 +94,8 @@
       "phone" : "801.773.4840",
       "address" : "2038 W 1900 S",
       "cityState" : "Syracuse, UT 84075",
-      "url" : "https://tannerclinic.com/",
-      "imageSrc" : "/chamber/images/tannerclinic.jpg",
+      "url" : "https://tannerclinic.com",
+      "imageSrc" : "./chamber/images/tannerclinic.jpg",
       "imageAlt" : "Tanner Clinic logo",
       "membershiplevel" : "gold"
 
@@ -105,8 +105,8 @@
       "phone" : "801.896.0661",
       "address" : "2432 W 1700 S",
       "cityState" : "Syracuse, UT 84075",
-      "url" : "https://www.hughescafe.com/",
-      "imageSrc" : "/chamber/images/hughes-logo.jpg",
+      "url" : "https://www.hughescafe.com",
+      "imageSrc" : "./chamber/images/hughes-logo.jpg",
       "imageAlt" : "Hug-Hes Cafe logo",
       "membershiplevel" : "bronze"
 

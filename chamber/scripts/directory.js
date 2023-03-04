@@ -76,6 +76,7 @@ const displayList = (company) => {
   let address = document.createElement("div")
   let phone = document.createElement("div")
   let url = document.createElement("div")
+  let a = document.createElement("a")()
 
   //adding the text info
   name.textContent = company.company
@@ -84,9 +85,19 @@ const displayList = (company) => {
 
   // adding attributes to the url
   url.setAttribute("class", "website-div")
-  url.setAttribute("href", company.url)
-  url.textContent = company.url
-  url.setAttribute("target", "blank")
+  a.setAttribute("href", company.url)
+  a.setAttribute("target", "blank")
+  //take out the really long urls and change the text to "website"
+  if (company.url.length > 50) {
+    a.textContent = "website"
+    //otherwise, print the website, but also take out the "https://www." and the "https://"
+  } else {
+    let urlString = company.url
+    let fixedUrlString = urlString.replace(/^https?:\/\/(www\.)?/, "")
+
+    a.textContent = fixedUrlString
+  }
+  url.appendChild(a)
 
   // Append the section(listing) with the created elements
   listing.appendChild(name)

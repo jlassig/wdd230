@@ -144,14 +144,14 @@ nav ul.open {
   color: black;
   grid-column: 1/4;
   margin: 10px;
-  padding: .25em;
+  padding: 0.25em;
   text-align: center;
 }
 
 .social-logo {
   border-radius: 30px;
   width: 40px;
-  padding: .5em;
+  padding: 0.5em;
 }
 .social {
   place-self: center;
@@ -188,7 +188,7 @@ nav ul.open {
   border-radius: 10px;
   box-shadow: 4px 4px 12px 3px var(--primary-color);
   max-width: 20rem;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .join-button a {
@@ -371,7 +371,8 @@ form input.submitBtn {
 }
 
 /*------------- directory page -------------*/
-.companyGrid, .companyList {
+.companyGrid,
+.companyList {
   color: black;
   padding: 1em;
 }
@@ -406,7 +407,7 @@ form input.submitBtn {
   background-color: var(--primary-color);
   width: 100px;
   color: white;
-  padding: .6em;
+  padding: 0.6em;
   border-radius: 20px;
   font-size: 1.3em;
 }
@@ -416,7 +417,6 @@ form input.submitBtn {
   justify-content: center;
   gap: 10%;
 }
-
 
 .companyList > *:nth-child(even) {
   background-color: var(--accent2-color);
@@ -429,7 +429,6 @@ form input.submitBtn {
   padding: 0.1em;
 }
 
-
 /* https: //www.w3docs.com/snippets/css/how-to-wrap-words-in-a-div-tag-with-css.html#:~:text=If%20you've%20faced%20the,need%20the%20word%2Dwrap%20property. */
 /* added to the grid and list so the website wraps neater instead of spilling out of the box.  */
 .website-div {
@@ -439,8 +438,12 @@ form input.submitBtn {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
-.website-div a:visited {
+.companyGrid .website-div a:visited {
   color: blue;
+}
+.companyList .website-div a:visited,
+.companyList .website-div a {
+  color: black;
 }
 
 footer {
