@@ -39,7 +39,7 @@ const displayGrid = (company) => {
   card.setAttribute("class", "companyCard")
   companyImg.setAttribute("src", company.imageSrc)
   companyImg.setAttribute("alt", company.imageAlt)
-  // companyImg.setAttribute("width", "150px")
+  companyImg.setAttribute("width", "150px")
   companyImg.setAttribute("loading", "lazy")
   url.setAttribute("class", "website-div")
   a.setAttribute("href", company.url)
@@ -76,7 +76,7 @@ const displayList = (company) => {
   let address = document.createElement("div")
   let phone = document.createElement("div")
   let url = document.createElement("div")
-  let a = document.createElement("a")()
+  let a = document.createElement("a")
 
   //adding the text info
   name.textContent = company.company
