@@ -152,3 +152,12 @@ ol {
 section{
   padding: 30px;
 }
+
+.view{
+  border: 2px solid var(--primary-color);
+  padding: 1em;
+}
+.view h2{
+  background-color: var(--accent2-color);
+  padding: 1em;
+}
