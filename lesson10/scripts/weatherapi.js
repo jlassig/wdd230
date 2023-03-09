@@ -2,9 +2,7 @@
 const currentTemp = document.querySelector("#current-temp")
 const iconContainer = document.querySelector("#icon-div")
 
-const url =
-  "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=1332197040ea80518ea099b97ec567b3"
-// "https://api.openweathermap.org/data/2.5/weather?lat=41.0896&lon=-112.0639&units=imperial&appid=1332197040ea80518ea099b97ec567b3"
+const url ="https://api.openweathermap.org/data/2.5/weather?lat=41.0896&lon=-112.0639&units=imperial&appid=1332197040ea80518ea099b97ec567b3"
 
 //lat=41.0896&lon=-112.0639
 // q = Fairbanks

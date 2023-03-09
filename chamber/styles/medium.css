@@ -49,6 +49,7 @@
   .home-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: .5em;
   }
   .hero {
     grid-column: 1/4;
@@ -62,6 +63,8 @@
     grid-row: 3/4;
     display: flex;
     flex-direction: row;
+
+
   }
 
   .spotlight1,
@@ -79,7 +82,7 @@
     padding: 1.5em;
   }
   .join .join-button {
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
     text-align: center;
     margin: auto;
   }
@@ -136,6 +139,7 @@
     border: 2px solid var(--primary-color);
     padding: 2em;
     font-size: 1.3em;
+
   }
 
   .demographics {

@@ -15,6 +15,7 @@
 
   .home-grid {
     grid-template-columns: 1fr 3fr 1fr;
+
   }
   .join,
   .weather,
@@ -24,6 +25,7 @@
 
   .join {
     grid-row: 3/4;
+    background-color: var(--accent1-color);
   }
   .hero,
   .news-release {
@@ -32,6 +34,7 @@
   .hero {
     grid-row: 1/3;
   }
+
 
   .news-release {
     grid-row: 3/4;
@@ -73,5 +76,8 @@
   }
   .join-box {
     gap: 2.5rem;
+  }
+  .info-box{
+        flex-direction: row;
   }
 }

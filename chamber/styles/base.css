@@ -198,27 +198,34 @@ nav ul.open {
   font-family: var(--heading-font);
   color: black;
 }
-.home-grid div {
+/* .home-grid div {
   border: 1px solid var(--primary-color);
-}
+} */
 .home-grid section {
   border: 1px solid var(--primary-color);
+
 }
-.event,
-.news-release {
+.event
+{
   text-align: center;
   background-color: var(--accent1-color);
-  padding: 1em;
+  padding: .5em;
   font-weight: bold;
 }
 .weather {
   text-align: center;
+  background-color: var(--accent2-color);
+    padding: 0.5em;
 }
 .event ul {
   list-style: none;
 }
 .event p a {
   color: black;
+}
+
+.news-release {
+  padding: 0.5em;
 }
 
 .spotlight1 {
@@ -452,11 +459,26 @@ footer {
   text-align: center;
   padding: 0.8em;
 }
+.openweather{
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.openweather:visited{
+  color: var(--secondary-color);
+}
 
 .location a {
   text-decoration: none;
   color: var(--secondary-color);
 }
+.info-box > *{
+  padding: .5em;
+}
+.info-box{
+  display: flex;
+  flex-direction: column;
+}
+
 .footer1,
 .contact-info {
   padding-bottom: 0.8em;
