@@ -201,21 +201,18 @@ nav ul.open {
 
 .home-grid section {
   border: 1px solid var(--primary-color);
-
 }
-.event
-{
+.event {
   text-align: center;
   background-color: var(--accent1-color);
-  padding: .5em;
+  padding: 0.5em;
   font-weight: bold;
 }
-
 
 .weather {
   text-align: center;
   background-color: var(--accent2-color);
-    padding: 0.5em;
+  padding: 0.5em;
 }
 .event ul {
   list-style: none;
@@ -250,12 +247,12 @@ nav ul.open {
 .spotlight3 {
   display: none;
 }
-.company-site-homepage, .company-site-homepage:visited{
+.company-site-homepage,
+.company-site-homepage:visited {
   color: black;
-  padding: .5em;
+  padding: 0.5em;
   text-decoration: none;
 }
-
 
 .join {
   display: none;
@@ -445,10 +442,6 @@ form input.submitBtn {
 /* https: //www.w3docs.com/snippets/css/how-to-wrap-words-in-a-div-tag-with-css.html#:~:text=If%20you've%20faced%20the,need%20the%20word%2Dwrap%20property. */
 /* added to the grid and list so the website wraps neater instead of spilling out of the box.  */
 .website-div {
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
 .companyGrid .website-div a:visited {
@@ -459,17 +452,30 @@ form input.submitBtn {
   color: black;
 }
 
+/* ----------contactUs page-------- */
+.contactus-info, .pointsofcontact-div{
+  text-align: center;
+}
+
+
+input.submitBtn.contactusBtn{
+  margin-top: 2em;
+}
+.contact-grid h2{
+  background-color: var(--accent1-color);
+  padding: .5em;
+}
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
   padding: 0.8em;
 }
-.openweather{
+.openweather {
   color: var(--secondary-color);
   text-decoration: none;
 }
-.openweather:visited{
+.openweather:visited {
   color: var(--secondary-color);
 }
 
@@ -477,10 +483,10 @@ footer {
   text-decoration: none;
   color: var(--secondary-color);
 }
-.info-box > *{
-  padding: .5em;
+.info-box > * {
+  padding: 0.5em;
 }
-.info-box{
+.info-box {
   display: flex;
   flex-direction: column;
 }
