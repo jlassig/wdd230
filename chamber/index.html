@@ -116,9 +116,8 @@
         <h2>Syracuse Weather</h2>
         <div class="temp-div"><span id="temp"></span>&#xb0;F</div>
         <div id="weather-type"></div>
-        <div id="weather-icon-div">   </div>
+        <div id="weather-icon-div"></div>
         <div>
-
           <div class="windspeed-div">
             Wind Speed: <span id="windspeed"></span> mph
           </div>
@@ -141,66 +140,11 @@
         </p>
       </div>
       <div class="spotlights">
-        <div class="spotlight1">
-          <a
-            href="https://www.lovethebird.com/"
-            target="blank"
-            class="company-site"
-            ><img
-              src="images/thebird-logo.jpg"
-              alt="the bird logo"
-              class="spotlight-img"
-          /></a>
-          <div class="company-info">
-            <p class="company-phone">385.477.8663</p>
-            <a
-              href="https://www.lovethebird.com/"
-              target="blank"
-              class="company-site"
-              >lovethebird.com</a
-            >
-          </div>
-        </div>
-
-        <div class="spotlight2">
-          <a href="https://www.therushfunplex.com/" target="blank"
-            ><img
-              src="images/rush-logo.jpg"
-              alt="the rush logo"
-              class="spotlight-img"
-          /></a>
-          <div class="company-info">
-            <p class="company-phone">801.779.2695</p>
-            <a
-              href="https://www.therushfunplex.com/"
-              target="blank"
-              class="company-site"
-              >therushfunplex.com</a
-            >
-          </div>
-        </div>
-
-        <div class="spotlight3">
-          <a
-            href="https://www.uecmovies.com/theatres/details/1017"
-            target="blank"
-            ><img
-              src="images/uec.logo.jpg"
-              alt="uec theaters logo"
-              class="spotlight-img"
-          /></a>
-          <div class="company-info">
-            <p class="company-phone">801.773.0836</p>
-            <a
-              href="https://www.uecmovies.com/theatres/details/1017"
-              target="blank"
-              class="company-site"
-              >uecmovies.com</a
-            >
-          </div>
-        </div>
+        <div class="spotlight1" id="spotlight1"></div>
+        <div class="spotlight2" id="spotlight2"></div>
+        <div class="spotlight3" id="spotlight3"></div>
       </div>
-      <!--end of spotlights div-->
+
 
       <div class="join">
         <div class="join-button"><a href="join.html">Join Us!</a></div>
@@ -223,7 +167,14 @@
               ><span>📍</span> Location Map</a
             >
           </div>
-          <div><a class="openweather" href="https://openweathermap.org/" target="blank">OpenWeatherMap</a></div>
+          <div>
+            <a
+              class="openweather"
+              href="https://openweathermap.org/"
+              target="blank"
+              >OpenWeatherMap</a
+            >
+          </div>
         </div>
       </div>
 
@@ -237,5 +188,6 @@
 
     <script src="scripts/chamber.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
   </body>
 </html>

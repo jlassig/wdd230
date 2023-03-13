@@ -198,9 +198,7 @@ nav ul.open {
   font-family: var(--heading-font);
   color: black;
 }
-/* .home-grid div {
-  border: 1px solid var(--primary-color);
-} */
+
 .home-grid section {
   border: 1px solid var(--primary-color);
 
@@ -212,6 +210,8 @@ nav ul.open {
   padding: .5em;
   font-weight: bold;
 }
+
+
 .weather {
   text-align: center;
   background-color: var(--accent2-color);
@@ -250,6 +250,12 @@ nav ul.open {
 .spotlight3 {
   display: none;
 }
+.company-site-homepage, .company-site-homepage:visited{
+  color: black;
+  padding: .5em;
+  text-decoration: none;
+}
+
 
 .join {
   display: none;
