@@ -41,6 +41,8 @@ function displayResults(weatherdata) {
   let weatherIcon = document.createElement("img")
   weatherIcon.setAttribute("src", iconsrc)
   weatherIcon.setAttribute("alt", descriptionTitle)
+  weatherIcon.setAttribute("width", "75")
+  weatherIcon.setAttribute("height", "75")
   weatherType.textContent = descriptionTitle
 
   weatherIconDiv.appendChild(weatherIcon)
