@@ -152,6 +152,7 @@ nav ul.open {
   border-radius: 30px;
   width: 40px;
   padding: 0.5em;
+  height: auto;
 }
 .social {
   place-self: center;

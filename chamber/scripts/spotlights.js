@@ -55,7 +55,8 @@ function displaySpotlight(company, spotlightNumber) {
   // // adding attributes to the image, url and card
   companyImg.setAttribute("src", company.imageSrc)
   companyImg.setAttribute("alt", company.imageAlt)
-  companyImg.setAttribute("width", "150px")
+  companyImg.setAttribute("width", "150")
+  companyImg.setAttribute("height", "150")
   companyImg.setAttribute("loading", "lazy")
   companyImg.setAttribute("class", "spotlight-img")
   imgUrl.setAttribute("href", company.url)
