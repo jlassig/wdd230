@@ -454,17 +454,17 @@ form input.submitBtn {
 }
 
 /* ----------contactUs page-------- */
-.contactus-info, .pointsofcontact-div{
+.contactus-info,
+.pointsofcontact-div {
   text-align: center;
 }
 
-
-input.submitBtn.contactusBtn{
+input.submitBtn.contactusBtn {
   margin-top: 2em;
 }
-.contact-grid h2{
+.contact-grid h2 {
   background-color: var(--accent1-color);
-  padding: .5em;
+  padding: 0.5em;
 }
 footer {
   background-color: var(--primary-color);

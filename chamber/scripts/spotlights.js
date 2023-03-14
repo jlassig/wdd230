@@ -10,34 +10,30 @@ async function getBusinessData() {
     const data = await response.json()
 
     const companies = data["companies"]
-   let condition = true;
+    let condition = true
 
     let counter = 1
-      while(condition){
-        companies.forEach((company) => {
-          let companiesLength = companies.length
-          let randoNum = getRandomNumber(companiesLength)
-          let index = companies.indexOf(company)
-          if (randoNum == index) {
-            if (
-              (company.membershiplevel === "gold" ||
-                company.membershiplevel === "silver") &&
-              counter != 4
-            ) {
-
-
-              displaySpotlight(company, counter)
-              counter++
-              companies.splice(index, 1)
-            }
-            if(counter>3){
-             condition = false;
-            }
-
+    while (condition) {
+      companies.forEach((company) => {
+        let companiesLength = companies.length
+        let randoNum = getRandomNumber(companiesLength)
+        let index = companies.indexOf(company)
+        if (randoNum == index) {
+          if (
+            (company.membershiplevel === "gold" ||
+              company.membershiplevel === "silver") &&
+            counter != 4
+          ) {
+            displaySpotlight(company, counter)
+            counter++
+            companies.splice(index, 1)
           }
-        })
-      }
-   
+          if (counter > 3) {
+            condition = false
+          }
+        }
+      })
+    }
   }
 }
 
@@ -93,11 +89,9 @@ function displaySpotlight(company, spotlightNumber) {
   }
 }
 
- function getRandomNumber(num){
-  let number = Math.floor(Math.random()*(num));
-  return number;}
-
+function getRandomNumber(num) {
+  let number = Math.floor(Math.random() * num)
+  return number
+}
 
 getBusinessData()
-
-
