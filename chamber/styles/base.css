@@ -224,8 +224,15 @@ nav ul.open {
 
 .news-release {
   padding: 0.5em;
+  text-align: center;
 }
+.news-release p a{
+  color: black;
 
+}
+.news-release p a:visited{
+  color: black;
+}
 .spotlight1 {
   text-align: center;
   padding: 1em;
