@@ -24,7 +24,6 @@
 }
 
 * {
-  /* border: 1px solid pink; */
   font-family: var(--paragraph-font);
   font-weight: bold;
   letter-spacing: 0.05rem;
@@ -330,8 +329,6 @@ nav ul.open {
 /* --------FORM---- */
 
 .asterik {
-  /* color: #AA4465; */
-  /* color: #B95071; */
   color: #a71113;
 }
 form {
