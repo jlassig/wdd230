@@ -218,31 +218,26 @@ nav ul.open {
 .event ul {
   list-style: none;
 }
-.event p a {
-  color: black;
-}
 
 .news-release {
   padding: 0.5em;
   text-align: center;
 }
-.news-release p a{
-  color: black;
+.news-release p{
+  line-height: 1.7em;
+}
 
-}
-.news-release p a:visited{
-  color: black;
-}
 .spotlight1 {
   text-align: center;
   padding: 1em;
   background-color: var(--accent2-color);
 }
 
-.spotlight1 div a:hover {
+.spotlight1 div a:hover, .news-release p a:hover {
   background-color: var(--accent1-color);
 }
-.spotlight2 div a:hover {
+.spotlight2 div a:hover,
+.event p a:hover {
   background-color: var(--accent2-color);
 }
 
@@ -256,7 +251,11 @@ nav ul.open {
   display: none;
 }
 .company-site-homepage,
-.company-site-homepage:visited {
+.company-site-homepage:visited,
+.event p a,
+.event p a:visited,
+.news-release p a,
+.news-release p a:visited {
   color: black;
   padding: 0.5em;
   text-decoration: none;
