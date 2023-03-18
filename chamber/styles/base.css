@@ -223,7 +223,7 @@ nav ul.open {
   padding: 0.5em;
   text-align: center;
 }
-.news-release p{
+.news-release p {
   line-height: 1.7em;
 }
 
@@ -233,7 +233,8 @@ nav ul.open {
   background-color: var(--accent2-color);
 }
 
-.spotlight1 div a:hover, .news-release p a:hover {
+.spotlight1 div a:hover,
+.news-release p a:hover {
   background-color: var(--accent1-color);
 }
 .spotlight2 div a:hover,
