@@ -1,0 +1,187 @@
+:root {
+  /*FONTS:*/
+  --heading-font: "Zeyada", Georgia, serif;
+  --paragraph-font: "Ubuntu", Tahoma, sans-serif;
+
+  /*COLORS:*/
+  --primary-color: #1C3E13;
+  --secondary-color: #FFFFFF;
+  --accent1-color: #29CE69;
+  --accent2-color: #FFA93F;
+
+  --headline-color-on-white: #1C3E13;
+  --headline-background-color: #FFFFFF;
+
+  --paragraph-color-on-white: #1C3E13;
+  --paragraph-color-on-color: #000000;
+  --paragraph-background-color: #29CE69;
+
+  --nav-link-color: #FFFFFF;
+  --nav-background-color: #1C3E13;
+  --nav-hover-link-color: #000000;
+  --nav-hover-background-color: #29CE69;
+}
+
+* {
+  font-family: var(--paragraph-font);
+  letter-spacing: 0.05rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+
+.header-grid {
+  background-color: var(--nav-background-color);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+nav {
+  grid-column: 1/4;
+  text-align: center;
+}
+  #primaryNav>*{
+   padding: 10px;
+   font-size: 1.9em;
+  }
+
+nav ul li a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  display: block;
+  padding: 0.8rem 2vw;
+  font-family: var(--heading-font);
+}
+nav ul li.active a {
+  background-color: var(--accent1-color);
+  color: black;
+}
+nav ul li a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#hamburgerBtn {
+  margin: 2rem 2vw;
+  background: transparent;
+  border: 1px solid RGBA(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  grid-column: 3/4;
+}
+
+nav ul {
+  display: none;
+}
+nav ul.open {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+  font-family: var(--heading-font);
+}
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+  font-family: var(--heading-font);
+}
+
+.header-date {
+  background-color: var(--accent1-color);
+  color: black;
+  grid-column: 1/4;
+  margin: 10px;
+  padding: 0.25em;
+  text-align: center;
+}
+
+.social-logo {
+  border-radius: 30px;
+  width: 40px;
+  padding: 0.5em;
+  height: auto;
+}
+.social {
+  place-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------contactUs page-------- */
+.contactus-info,
+.pointsofcontact-div {
+  text-align: center;
+}
+
+input.submitBtn.contactusBtn {
+  margin-top: 2em;
+}
+.contact-grid h2 {
+  background-color: var(--accent1-color);
+  padding: 0.5em;
+}
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 0.8em;
+}
+.openweather {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.openweather:visited {
+  color: var(--secondary-color);
+}
+
+.location a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.info-box > * {
+  padding: 0.5em;
+}
+.info-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer1,
+.contact-info {
+  padding-bottom: 0.8em;
+}
+
+.footer2 {
+  border-top: 1px solid var(--secondary-color);
+  padding-top: 0.8em;
+}
+.footer2 p {
+  margin: 0;
+}
