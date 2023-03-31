@@ -3,17 +3,14 @@
     max-width: 85%;
     margin: auto;
   }
-  .header-date {
-    font-size: 1.2em;
-  }
+
+
 
   nav ul li a {
     padding: 0.5rem 1rem;
     font-size: 1.2em;
   }
 
-  .home-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+
  
 }

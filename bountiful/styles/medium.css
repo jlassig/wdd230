@@ -9,35 +9,17 @@
   }
 
   nav {
-    grid-column: 2/3;
-    grid-row: 1/2;
     padding: 1em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   nav ul#primaryNav {
     display: flex;
-    justify-content: center;
   }
-
-
-
   nav ul li a {
     border: none;
-  }
-  .social {
-    grid-column: 3/4;
-    grid-row: 1/4;
-  }
-
-
-  .header-img-div {
-    grid-row: 1/4;
-    display: flex;
-    justify-content: center;
-    position: relative;
   }
 
   .header-img-div img {
@@ -48,12 +30,71 @@
 
   .home-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5em;
   }
-  .hero {
-    grid-column: 1/4;
+
+  .hero h1 {
+    font-size: 3rem;
   }
+  .make-drink {
+    display: none;
+  }
+  /*---------------------- when I do add the make-drink button below, give it a 
+  font-size of 2em!!! */
+
+  .information-card {
+    display: block;
+    position: relative;
+  }
+  .information-card img {
+    display: block;
+    width: 100%;
+  }
+  .information-card p {
+    position: absolute;
+    top: 0.9rem;
+    left: 50%;
+      transform: translateX(-50%);
+  background-color: #29ce69cc;
+    padding: 0.25em;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+  }
+
+  .make-drink2 {
+  background-color: var(--primary-color);
+  max-width: 18rem;
+  padding: 0.75em;
+  padding-top: 2.5%;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid var(--accent2-color);
+
+
+}
+.make-drink2 a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25em;
+  letter-spacing: 0.15em;
+  font-family: var(--heading-font);
+  padding-top: 2.5%;  
+}
+.make-drink2:hover{
+  background-color: var(--accent1-color);
+}
+.make-drink2 a:hover{
+  color: black;
+  font-weight: bold;
+}
+
 
 
   .footer1 {
