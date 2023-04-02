@@ -37,7 +37,7 @@ h4 {
 h2 {
   text-align: center;
   font-size: 2em;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-weight: bold;
 }
 
@@ -58,15 +58,12 @@ nav ul li a {
   display: block;
   padding: 0.8rem 2vw;
   font-family: var(--heading-font);
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
 }
-nav ul li.active a {
-  background-color: var(--accent1-color);
-  color: black;
-}
+
 nav ul li a:hover {
   background-color: var(--nav-hover-background-color);
-  color: var(--nav-hover-link-color);
+  color: black;
 }
 
 nav ul {
@@ -109,7 +106,6 @@ nav ul.open {
   font-family: var(--heading-font);
 }
 
-
 .hero {
   position: relative;
 }
@@ -132,7 +128,7 @@ nav ul.open {
   color: black;
   text-align: center;
   width: 80%;
-  padding-top:1.5%;
+  padding-top: 1.5%;
 }
 
 /* only on small home screen, make-drink button leads to fresh page */
@@ -147,8 +143,6 @@ nav ul.open {
   left: 50%;
   transform: translateX(-50%);
   border: 5px solid var(--accent2-color);
-
-
 }
 .make-drink a {
   color: var(--secondary-color);
@@ -157,79 +151,153 @@ nav ul.open {
   font-size: 1.25em;
   letter-spacing: 0.15em;
   font-family: var(--heading-font);
-  padding-top: 2.5%;  
+  padding-top: 2.5%;
 }
-.make-drink:hover{
+.make-drink:hover {
   background-color: var(--accent1-color);
 }
-.make-drink a:hover{
+.make-drink a:hover {
   color: black;
   font-weight: bold;
 }
 
-#weather-cards>*{
-background-color: var(--accent1-color);
-margin: .5em;
-padding: 1em;
-text-align: center;
-
+#weather-cards > * {
+  background-color: var(--accent1-color);
+  margin: 0.5em;
+  padding: 1em;
+  text-align: center;
 }
-#weather-cards{
+#weather-cards {
   border: 10px solid var(--accent2-color);
 }
-.weather-info h2{
+.weather-info h2 {
   background-color: var(--accent2-color);
   padding: 1em;
-  
 }
 
-.company-info, .carlsbad-info, .information-card{
+.company-info,
+.carlsbad-info,
+.information-card {
   padding: 1em;
-  text-align: center;  
+  text-align: center;
 }
-.navigation >*, .contact-info>*{
+.navigation > *,
+.contact-info > * {
   margin: 0;
 }
 
-.company-info>*
-{
+.company-info > * {
   margin: 1em;
 }
-.contact-info p
-{
-  padding-bottom: .5em;
+.contact-info p {
   border-bottom: 2px solid var(--accent2-color);
 }
-.contact-info h3:nth-of-type(1)
-{
+.contact-info h3:nth-of-type(1) {
   border-top: 2px solid var(--accent2-color);
 }
-.contact-info, .navigation{
-    border: 2px solid var(--accent2-color);
+.contact-info,
+.navigation {
+  border: 2px solid var(--accent2-color);
 }
-.navigation p, .carlsbad-info>*{
+/* .navigation p, .carlsbad-info>*{
   padding: .5em;
-}
+} */
 
-.contact-info h3{
-  padding-top: .5em;
+.contact-info > *,
+.navigation > * {
+  padding: 0.5em;
 }
-.navigation p a{
+.contact-info h3,
+.navigation h2 {
+  padding-bottom: 0;
+}
+.navigation p a {
   color: black;
 }
-.nagivation p a:visited{
-  color:black;
+.nagivation p a:visited {
+  color: black;
 }
 
-.carlsbad-info{
+.carlsbad-info {
   border: 2px solid var(--accent1-color);
 }
 
-.information-card{
+.information-card {
   display: none;
 }
 
 
+/* ------------fresh page------------- */
+.asterik {
+  color: #a71113;
+}
+form {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  /* padding: 0.5rem 2%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+form label.top {
+  display: block;
+  padding-top: 1rem;
+  color: var(--primary-color);
+}
+form label.top input,
+textarea {
+  display: block;
+  font-size: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+#submitBtn {
+  border: none;
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  display: block;
+  margin: auto;
+  width: 96%;
+  max-width: 20rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+  /* .fruity-div{
+    background-image: url("../images/fruits2.png");
+    opacity: .3;
+    background-size: cover;
+    background-position: center;
+
+  border-radius: 10px;
+  position: relative;
+
+  } */
+  /* #nutrition-info{
+
+    display: block;
+    margin: auto;
+    position: absolute;
+  }
+
+  #nutrition-info p{
+        opacity: 1;
+    color: black;
+  } */
+
+
+
+/* --------------footer info--------------*/
 
 footer {
   background-color: var(--primary-color);
@@ -237,11 +305,13 @@ footer {
   text-align: center;
   padding: 0.8em;
 }
-.openweather {
+.openweather,
+.resources a {
   color: var(--secondary-color);
   text-decoration: none;
 }
-.openweather:visited {
+.openweather:visited,
+.resources a:visited {
   color: var(--secondary-color);
 }
 

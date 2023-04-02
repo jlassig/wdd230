@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- for my google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Zeyada&display=swap"
+      rel="stylesheet" />
+
+    <!-- normalize my code: -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!-- my stylesheets (for responsive design) -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <!-- for the favicon: -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page to make a fresh drink on the Bountiful Foods site designed by Julia Lassig." />
+
+    <title>Fresh</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-grid">
+        <nav>
+          <div class="header-img-div">
+            <a href="index.html">
+              <img
+                src="images/bountifulfoods.webp"
+                alt="Bountiful Foods logo"
+                width="200"
+                height="91" />
+            </a>
+          </div>
+
+          <div>
+            <button id="hamburgerBtn">
+              <span>&#9776;</span><span>X</span>
+            </button>
+          </div>
+
+          <ul id="primaryNav">
+            <li><a href="index.html" target="blank">Home</a></li>
+            <li><a href="fresh.html" target="blank">Fresh</a></li>
+            <li><a href="aboutus.html" target="blank">About us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <picture class="hero-img">
+          <source srcset="images/drinks-lg.jpg" media="(min-width: 1100px)" />
+          <source srcset="images/drinks-med.jpg" media="(min-width: 800px)" />
+          <img src="images/drinks-small.jpg" alt="Photo of smoothies" />
+        </picture>
+        <h1>Make a fresh drink</h1>
+      </section>
+
+      <section class="home-grid fresh-grid">
+        <h2>Fill out the form below to order your drink</h2>
+        <!-- form goes here -->
+        <form>
+          <!-- first name -->
+          <label class="top"
+            >First Name<span class="asterik">*</span
+            ><input type="text" name="fname" id="fname" required
+          /></label>
+
+          <!-- email -->
+          <label class="top"
+            >Email<span class="asterik">*</span
+            ><input
+              type="email"
+              name="email"
+              placeholder="example@email.com"
+              id="email-input"
+              required
+          /></label>
+          <!-- phone number -->
+          <label class="top"
+            >Phone<span class="asterik">*</span
+            ><input
+              type="tel"
+              name="phone"
+              id="phone-input"
+              placeholder="1111111111"
+              required
+          /></label>
+          <!-- 3 select elements populated from JSON -->
+          <label class="top"
+            >Select 1st fruit:            <select id="fruit1" name="fruit1"></select>
+          </label>
+
+          <label class="top"
+            >Select 2nd fruit:
+            <select id="fruit2" name="fruit2"></select>
+          </label>
+
+          <label class="top"
+            >Select 3rd fruit:
+            <select id="fruit3" name="fruit3"></select>
+          </label>
+
+          <!-- special instruction input -->
+
+          <label class="top"
+            >Special Instructions:<textarea
+              name="special-instructions"
+              id="instructions"
+              rows="4"
+              cols="30"></textarea>
+          </label>
+
+          <!-- a button that says to make that drink!!! -->
+          <input
+            type="submit"
+            value="Make my Drink"
+            id="submitBtn"
+            onclick="event.preventDefault()" />
+        </form>
+        <h2>Your order and nutrition info:</h2>
+        <div id="order-info"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer1">
+        <div class="resources">
+          <a href="resources.html" target="blank">Resources</a>
+        </div>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img
+              class="social-logo"
+              src="images/facebook.png"
+              alt="fb icon"
+              width="64"
+              height="64" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img
+              class="social-logo"
+              src="images/twitter.png"
+              alt="twitter icon"
+              width="64"
+              height="64" />
+          </a>
+
+          <a href="https://instagram.com" target="_blank">
+            <img
+              class="social-logo"
+              src="images/instagram.png"
+              alt="instagram icon"
+              width="64"
+              height="64" />
+          </a>
+        </div>
+
+        <div>
+          <a
+            class="openweather"
+            href="https://openweathermap.org/"
+            target="blank"
+            >OpenWeatherMap</a
+          >
+        </div>
+      </div>
+
+      <div class="footer2">
+        <p>&copy;<span id="copyright-year"></span> Bountiful Foods</p>
+        <p>Julia Lassig</p>
+
+        <div id="date-mod"></div>
+      </div>
+    </footer>
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/drink.js" defer></script>
+  </body>
+</html>

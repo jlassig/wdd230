@@ -50,6 +50,7 @@
           </div>
 
           <ul id="primaryNav">
+            <li><a href="index.html" target="blank">Home</a></li>
             <li><a href="fresh.html" target="blank">Fresh</a></li>
             <li><a href="aboutus.html" target="blank">About us</a></li>
           </ul>
@@ -71,8 +72,8 @@
       <section class="home-grid">
         <div class="information-card">
           <img src="images/smoothies.jpg" alt="Hand holding a smoothie" />
-          <!-- smoothie picture from:  https://www.pexels.com/@polina-tankilevitch/ -->
-          <p>You have made <span></span> drinks.</p>
+
+          <p id="drinks-num"></p>
           <div class="make-drink2">
             <a href="fresh.html" target="blank">Make a Drink!</a>
           </div>
@@ -82,10 +83,6 @@
           <div class="navigation">
             <h2>Come visit us</h2>
             <p>
-              <a href="https://goo.gl/maps/AdqsphPjxH9SPXncA" target="blank"
-                ><span>📍</span> Location Map</a
-              >
-              <br />
               We are conveniently situated off the I-5 on Carlsbad Village Drive
               close to Carlsbad City Beach. With our close proximity to the
               beach, you can grab a healthy, refreshing beverage while you relax
@@ -93,6 +90,11 @@
               to enjoy the beach today, no worries, our nutritious drinks are
               packed in a convenient tumbler that you can take to work, the gym,
               home or wherever your life is going today.
+              <br />
+              <br />
+              <a href="https://goo.gl/maps/AdqsphPjxH9SPXncA" target="blank"
+                ><span>📍</span> Location Map</a
+              >
             </p>
           </div>
 
@@ -131,6 +133,9 @@
 
     <footer>
       <div class="footer1">
+        <div class="resources">
+          <a href="resources.html" target="blank">Resources</a>
+        </div>
         <div class="social">
           <a href="https://facebook.com" target="_blank">
             <img
@@ -179,5 +184,6 @@
 
     <script src="scripts/home.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/drinknum.js" defer></script>
   </body>
 </html>

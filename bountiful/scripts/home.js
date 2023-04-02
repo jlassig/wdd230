@@ -21,5 +21,3 @@ document.getElementById("date-mod").innerHTML = dateModified
 const year = today.getFullYear()
 //now put the current year in the HTML where it says "copyright-year":
 document.querySelector("#copyright-year").innerHTML = year
-
-

@@ -1,6 +1,5 @@
 // // select HTML elements in the document
 
-
 const url =
   "https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&units=imperial&appid=1332197040ea80518ea099b97ec567b3"
 
@@ -20,18 +19,17 @@ async function apiFetch() {
 }
 
 function displayResults(weatherdata) {
-const weatherCards = document.querySelector("#weather-cards")
-  for (let i=0; i < weatherdata.list.length; i += 8)
-  {
-    let card = document.createElement('div')
-    let dateDiv = document.createElement('div')
-    let tempDiv = document.createElement('div')
-    let tempSpan = document.createElement('span')
-    let weatherIconDiv = document.createElement('div')
-    let weatherIcon = document.createElement('img')
-    let humidityDiv = document.createElement('div')
+  const weatherCards = document.querySelector("#weather-cards")
+  for (let i = 0; i < weatherdata.list.length; i += 8) {
+    let card = document.createElement("div")
+    let dateDiv = document.createElement("div")
+    let tempDiv = document.createElement("div")
+    let tempSpan = document.createElement("span")
+    let weatherIconDiv = document.createElement("div")
+    let weatherIcon = document.createElement("img")
+    let humidityDiv = document.createElement("div")
     let weatherSrc = `https://openweathermap.org/img/w/${weatherdata.list[i].weather[0].icon}.png`
-    let descriptionDiv = document.createElement('div')
+    let descriptionDiv = document.createElement("div")
     let description = toTitleCase(weatherdata.list[i].weather[0].description)
     let date = formatDate(weatherdata.list[i].dt_txt)
     dateDiv.textContent = date
@@ -47,14 +45,11 @@ const weatherCards = document.querySelector("#weather-cards")
     card.appendChild(humidityDiv)
     card.appendChild(descriptionDiv)
     weatherCards.appendChild(card)
-    
 
-  if(i>=16)
-  {
-    break;
+    if (i >= 16) {
+      break
+    }
   }
-  }  
-
 }
 
 apiFetch()
@@ -67,56 +62,53 @@ function toTitleCase(string) {
   sentence = sentence.join(" ")
   return sentence
 }
-function formatDate(string)
-{
+function formatDate(string) {
   let month = ""
-  let year = string.slice(0,4)
-  let monthNum = string.slice(5,7)
-  let day = string.slice(8,10)
+  let year = string.slice(0, 4)
+  let monthNum = string.slice(5, 7)
+  let day = string.slice(8, 10)
 
-  switch (monthNum)
-  {
+  switch (monthNum) {
     case "01":
       month = "January"
-      break;
+      break
     case "02":
       month = "February"
-      break;
+      break
     case "03":
       month = "March"
-      break;
+      break
     case "04":
       month = "April"
-      break;
+      break
     case "05":
       month = "May"
-      break;
+      break
     case "06":
       month = "June"
-      break;
+      break
     case "07":
       month = "July"
-      break;
+      break
     case "08":
       month = "August"
-      break;
+      break
     case "09":
       month = "September"
-      break;
+      break
     case "10":
       month = "October"
-      break;
+      break
     case "11":
       month = "November"
-      break;
+      break
     case "12":
       month = "December"
-      break;
+      break
     default:
       month = "month"
-      break;
+      break
   }
 
   return `${month} ${day}, ${year}`
-  
 }
