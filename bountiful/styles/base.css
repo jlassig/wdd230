@@ -72,6 +72,11 @@ nav ul {
   margin: 0;
 }
 
+.active{
+  background-color: var(--accent2-color);
+  color: black;
+}
+
 #hamburgerBtn {
   margin: 2rem 2vw;
   background: transparent;
