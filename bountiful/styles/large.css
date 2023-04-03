@@ -9,25 +9,28 @@
     font-size: 1.2em;
   }
 
-  .home-grid{
+  .home-grid {
     column-gap: 4em;
   }
 
-
-  .make-drink2{
+  .make-drink2 {
     font-size: 2em;
   }
 
-  .order-holder >*{
+  .order-holder > * {
     font-size: 1.2em;
   }
 
-  .order-holder>* h3{
+  .order-holder > * h3 {
     font-size: 1.7em;
   }
 
-  .order-date{
+  .order-date {
     font-size: 1.4em;
   }
 
+  .map-img {
+    background-image: url("../images/google-lg.jpg");
+    min-height: 400px;
+  }
 }

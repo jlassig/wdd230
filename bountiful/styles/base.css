@@ -206,10 +206,30 @@ nav ul.open {
   color: black;
 }
 
-.carlsbad-info {
+.google-map,
+.carlsbad-info,
+.our-history {
   border: 10px solid var(--accent1-color);
 }
-.carlsbad-info div {
+.map-img {
+  min-height: 250px;
+  background-color: white;
+  background-image: url("../images/google.jpg");
+  background-origin: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutus-grid > * {
+  margin: 20px 0;
+}
+.area-history {
+  border: 10px solid var(--accent2-color);
+}
+.carlsbad-info div,
+.area-history p,
+.our-history p {
   padding: 1em;
 }
 
@@ -228,6 +248,8 @@ nav ul.open {
   padding: 1em;
 }
 
+
+
 /* ------------fresh page------------- */
 .asterik {
   color: #a71113;
@@ -239,23 +261,21 @@ form {
   flex-direction: column;
 
   align-items: center;
-    background-image: url("../images/fruits2.png");
+  background-image: url("../images/fruits2.png");
   background-size: cover;
   background-position: center;
 }
 form > * {
   margin-top: 2em;
   background-color: var(--secondary-color);
-
 }
-form >* >*{
+form > * > * {
   color: var(--primary-color);
 }
 
 form label.top {
   display: block;
   padding-top: 1rem;
-
 }
 form label.top input,
 textarea,
@@ -269,13 +289,14 @@ select {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-form fieldset legend, form fieldset{
-border: 2px solid var(--primary-color);
-border-radius: 5px;
+form fieldset legend,
+form fieldset {
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
 }
 
-form fieldset legend{
-  padding: .3em;
+form fieldset legend {
+  padding: 0.3em;
   background-color: var(--accent1-color);
 }
 
@@ -307,28 +328,31 @@ form fieldset legend{
 .order-holder > * {
   border-bottom: 3px solid var(--primary-color);
   text-align: center;
-
 }
 
 .order-holder > * h3 {
   font-size: 1.3em;
   letter-spacing: 0.15em;
   border-bottom: 3px solid var(--primary-color);
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 
-
-.order-date{
+.order-date {
   letter-spacing: 0.15em;
   border: none;
 }
-.order-placeholder{
+.order-placeholder {
   font-size: 1.5em;
   text-align: center;
   padding: 1.5em 1em;
-
 }
 
+
+/* resources page */
+.image-credit{
+  display: block;
+
+}
 
 
 /* --------------footer info--------------*/
