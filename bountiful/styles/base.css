@@ -248,8 +248,6 @@ nav ul.open {
   padding: 1em;
 }
 
-
-
 /* ------------fresh page------------- */
 .asterik {
   color: #a71113;
@@ -347,12 +345,19 @@ form fieldset legend {
   padding: 1.5em 1em;
 }
 
-
 /* resources page */
-.image-credit{
+.image-credit {
   display: block;
+}
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  text-align: center;
+  row-gap: 3em;
 
 }
+
+
 
 
 /* --------------footer info--------------*/
