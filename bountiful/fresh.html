@@ -60,9 +60,24 @@
     <main>
       <section class="hero">
         <picture class="hero-img">
-          <source srcset="images/drinks-lg.jpg" media="(min-width: 1100px)" />
-          <source srcset="images/drinks-med.jpg" media="(min-width: 800px)" />
-          <img src="images/drinks-small.jpg" alt="Photo of smoothies" />
+          <source
+            srcset="images/drinks-lg.jpg"
+            media="(min-width: 1100px)"
+            width="935"
+            height="450"
+            loading="lazy" />
+          <source
+            srcset="images/drinks-med.jpg"
+            media="(min-width: 800px)"
+            width="800"
+            height="375"
+            loading="lazy" />
+          <img
+            src="images/drinks-small.jpg"
+            alt="Photo of smoothies"
+            width="360"
+            height="300"
+            loading="lazy" />
         </picture>
         <h1>Make a fresh drink</h1>
       </section>
@@ -140,8 +155,9 @@
         </form>
         <h2>Your order and nutrition info:</h2>
         <div id="order-info">
-          <p class="order-placeholder">Your information will appear here when you complete the form. </>
-
+          <p class="order-placeholder">
+            Your information will appear here when you complete the form.
+          </p>
         </div>
       </section>
     </main>

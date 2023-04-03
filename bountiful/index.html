@@ -60,9 +60,24 @@
     <main>
       <section class="hero">
         <picture class="hero-img">
-          <source srcset="images/fruits-lg.jpg" media="(min-width: 1100px)" />
-          <source srcset="images/fruits-med.jpg" media="(min-width: 800px)" />
-          <img src="images/fruits-small.jpg" alt="Photo of various fruits" />
+          <source
+            srcset="images/fruits-lg.jpg"
+            media="(min-width: 1100px)"
+            width="935"
+            height="450"
+            loading="lazy"/>
+          <source
+            srcset="images/fruits-med.jpg"
+            media="(min-width: 800px)"
+            width="800"
+            height="375"
+            loading="lazy" />
+          <img
+            src="images/fruits-small.jpg"
+            alt="Photo of various fruits"
+            width="360"
+            height="300"
+            loading="lazy" />
         </picture>
         <h1>Bountiful Foods</h1>
 
@@ -70,13 +85,22 @@
       </section>
       <section class="home-grid">
         <div class="information-card">
-          <img src="images/smoothies.jpg" alt="Hand holding a smoothie" />
+          <picture>
+            <source
+              srcset="images/smoothies-lg.jpg"
+              media="(min-width:1100px)"
+              width="550"
+              height="675"
+              loading="lazy" />
+            <img
+              src="images/smoothies.jpg"
+              alt="Hand holding a smoothie"
+              width="450"
+              height="690"
+              loading="lazy" />
+          </picture>
 
-          <h2 id="drinks-num"></h2>
-
-          <!-- <div class="make-drink2">
-            <a href="fresh.html" target="blank">Make a Drink!</a>
-          </div> -->
+          <h2 id="drinks-num">Amount ordered goes here</h2>
 
           <a href="fresh.html" target="blank" class="make-drink2"
             >Make a Drink!</a

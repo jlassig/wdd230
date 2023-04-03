@@ -24,7 +24,6 @@
 
   .header-img-div img {
     width: 100%;
-    aspect-ratio: 1/1;
     padding: 0.5em;
   }
 
@@ -66,6 +65,7 @@
     text-align: center;
   }
 
+
   .make-drink2 {
     background-color: var(--accent1-color);
     color: black;
@@ -101,6 +101,10 @@
   .map-img {
     background-image: url("../images/google-med.jpg");
     min-height: 320px;
+  }
+
+  .social{
+    padding: 0;
   }
 
   .footer1 {

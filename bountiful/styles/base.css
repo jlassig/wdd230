@@ -218,7 +218,16 @@ nav ul.open {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
+.map-img p{
+  text-align: center;
+  color: black;
+}
+
 
 .aboutus-grid > * {
   margin: 20px 0;
@@ -375,6 +384,12 @@ footer {
 .openweather:visited,
 .resources a:visited {
   color: var(--secondary-color);
+}
+.social{
+  padding: 2em;
+}
+.social >*{
+  padding: 0 1em;
 }
 
 .location a {
