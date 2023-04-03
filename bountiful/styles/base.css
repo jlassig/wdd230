@@ -33,11 +33,11 @@ h3,
 h4 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
+  letter-spacing: .15em;
 }
 h2 {
   text-align: center;
   font-size: 2em;
-  letter-spacing: 0.1em;
   font-weight: bold;
 }
 
@@ -58,7 +58,7 @@ nav ul li a {
   display: block;
   padding: 0.8rem 2vw;
   font-family: var(--heading-font);
-  letter-spacing: 0.25rem;
+  letter-spacing: .15em;
 }
 
 nav ul li a:hover {
@@ -121,7 +121,6 @@ nav ul.open {
   padding: 0.25em;
   font-weight: bold;
   font-size: 2rem;
-  letter-spacing: 0.15em;
   color: black;
   text-align: center;
   width: 80%;
@@ -199,10 +198,10 @@ nav ul.open {
 .navigation h2 {
   padding-bottom: 0;
 }
-.navigation p a {
+.navigation p a, .area-history p a{
   color: black;
 }
-.nagivation p a:visited {
+.nagivation p a:visited .area-history p a:visited{
   color: black;
 }
 
@@ -231,6 +230,7 @@ nav ul.open {
 .area-history p,
 .our-history p {
   padding: 1em;
+  text-align: center;
 }
 
 .information-card {
@@ -294,6 +294,7 @@ form fieldset {
 }
 
 form fieldset legend {
+  text-align: center;
   padding: 0.3em;
   background-color: var(--accent1-color);
 }
@@ -330,13 +331,11 @@ form fieldset legend {
 
 .order-holder > * h3 {
   font-size: 1.3em;
-  letter-spacing: 0.15em;
   border-bottom: 3px solid var(--primary-color);
   padding-bottom: 0.5em;
 }
 
 .order-date {
-  letter-spacing: 0.15em;
   border: none;
 }
 .order-placeholder {
