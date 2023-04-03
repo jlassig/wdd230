@@ -25,6 +25,7 @@
 * {
   font-family: var(--paragraph-font);
   letter-spacing: 0.05rem;
+
 }
 
 h1,
@@ -81,9 +82,6 @@ nav ul {
   grid-column: 3/4;
 }
 
-/* #hamburgerBtn span:nth-of-type(2)  {
-  font-family: var(--paragraph-font);
-} */
 nav ul {
   display: none;
 }
@@ -133,10 +131,14 @@ nav ul.open {
 
 /* only on small home screen, make-drink button leads to fresh page */
 .make-drink {
-  background-color: var(--primary-color);
-  max-width: 18rem;
-  padding: 0.75em;
-  padding-top: 2.5%;
+  background-color: var(--accent1-color);
+  color: black;
+  padding: 0.5em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25em;
+  letter-spacing: 0.15em;
+  font-family: var(--heading-font);
   border-radius: 10px;
   position: absolute;
   bottom: 2rem;
@@ -144,20 +146,10 @@ nav ul.open {
   transform: translateX(-50%);
   border: 5px solid var(--accent2-color);
 }
-.make-drink a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.25em;
-  letter-spacing: 0.15em;
-  font-family: var(--heading-font);
-  padding-top: 2.5%;
-}
+
 .make-drink:hover {
-  background-color: var(--accent1-color);
-}
-.make-drink a:hover {
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
@@ -165,7 +157,6 @@ nav ul.open {
   background-color: var(--accent1-color);
   margin: 0.5em;
   padding: 1em;
-  text-align: center;
 }
 #weather-cards {
   border: 10px solid var(--accent2-color);
@@ -175,14 +166,13 @@ nav ul.open {
   padding: 1em;
 }
 
-.company-info,
-.carlsbad-info,
+
 .information-card {
   padding: 1em;
-  text-align: center;
+
 }
 .navigation > *,
-.contact-info > * {
+.contact-info > *, .weather-info >* {
   margin: 0;
 }
 
@@ -190,22 +180,21 @@ nav ul.open {
   margin: 1em;
 }
 .contact-info p {
-  border-bottom: 2px solid var(--accent2-color);
+  border-bottom: 10px solid var(--accent2-color);
 }
 .contact-info h3:nth-of-type(1) {
-  border-top: 2px solid var(--accent2-color);
+  border-top: 10px solid var(--accent2-color);
 }
 .contact-info,
 .navigation {
-  border: 2px solid var(--accent2-color);
+  border: 10px solid var(--accent2-color);
 }
-/* .navigation p, .carlsbad-info>*{
-  padding: .5em;
-} */
 
-.contact-info > *,
-.navigation > * {
+.contact-info > *, .navigation h2{
   padding: 0.5em;
+}
+.navigation p{
+  padding: 1em;
 }
 .contact-info h3,
 .navigation h2 {
@@ -219,13 +208,23 @@ nav ul.open {
 }
 
 .carlsbad-info {
-  border: 2px solid var(--accent1-color);
+  border: 10px solid var(--accent1-color);
+}
+.carlsbad-info div{
+  padding: 1em;
 }
 
 .information-card {
   display: none;
 }
 
+.contact-info, .navigation, .carlsbad-info, #weather-cards > *{
+      text-align: center;
+}
+
+#drinks-num {
+  padding: 1em;
+}
 
 /* ------------fresh page------------- */
 .asterik {
@@ -234,11 +233,9 @@ nav ul.open {
 form {
   border: 2px solid var(--primary-color);
   border-radius: 10px;
-  /* padding: 0.5rem 2%; */
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 form label.top {
@@ -258,7 +255,6 @@ textarea {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-
 #submitBtn {
   border: none;
   background-color: var(--accent2-color);
@@ -273,17 +269,15 @@ textarea {
   margin-bottom: 20px;
 }
 
-  /* .fruity-div{
+#order-info{
     background-image: url("../images/fruits2.png");
-    opacity: .3;
     background-size: cover;
     background-position: center;
-
   border-radius: 10px;
   position: relative;
 
-  } */
-  /* #nutrition-info{
+  }
+/* #nutrition-info{
 
     display: block;
     margin: auto;
@@ -294,8 +288,6 @@ textarea {
         opacity: 1;
     color: black;
   } */
-
-
 
 /* --------------footer info--------------*/
 
