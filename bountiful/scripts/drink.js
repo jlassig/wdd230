@@ -51,20 +51,33 @@ const displayDrinkInfo = (array1, array2, array3) => {
   let totalFat = 0
   let totalSugar = 0
   let totalCal = 0
-
+  let dateHolder = document.createElement("h4")
+  let infoH3 = document.createElement("h3")
   let nameHolder = document.createElement("p")
   let emailHolder = document.createElement("p")
   let phoneHolder = document.createElement("p")
+  let orderH3 = document.createElement("h3")
   let fruitHolder = document.createElement("p")
-
   let instructionHolder = document.createElement("p")
-  let dateHolder = document.createElement("p")
-
+  let nutritionH3 = document.createElement("h3")
   let carbHolder = document.createElement("p")
   let protHolder = document.createElement("p")
   let fatHolder = document.createElement("p")
   let sugarHolder = document.createElement("p")
   let calHolder = document.createElement("p")
+
+  let personalInfo = document.createElement("div")
+  let orderInfo = document.createElement("div")
+  let nutritionInfo = document.createElement("div")
+
+  // personalInfo.setAttribute("class", "order-personal-info")
+  // orderInfo.setAttribute("class", "order-order-info")
+  // nutritionInfo.setAttribute("class", "order-nutrition-info")
+  orderHolder.setAttribute("class", "order-holder")
+  dateHolder.setAttribute("class", "order-date")
+  infoH3.innerHTML = "Your info"
+  orderH3.innerHTML = "Order info"
+  nutritionH3.innerHTML = "Nutrition info"
 
   let name = document.querySelector("#fname")
   nameHolder.innerHTML = `Name: ${name.value}`
@@ -76,7 +89,7 @@ const displayDrinkInfo = (array1, array2, array3) => {
   let fruit1 = array1[0]
   let fruit2 = array2[0]
   let fruit3 = array3[0]
-  fruitHolder.innerHTML = `The fruits you chose: ${fruit1}, ${fruit2}, and ${fruit3}`
+  fruitHolder.innerHTML = `The fruits you chose: <br>${fruit1}, ${fruit2}, and ${fruit3}`
 
   let instructions = document.querySelector("#instructions")
   instructionHolder.innerHTML = `Instructions: ${instructions.value}`
@@ -95,19 +108,27 @@ const displayDrinkInfo = (array1, array2, array3) => {
   fatHolder.innerHTML = `Total fat: ${totalFat.toFixed(1)}`
   sugarHolder.innerHTML = `Total sugar: ${totalSugar.toFixed(1)}`
   calHolder.innerHTML = `Total calories: ${totalCal.toFixed(1)}`
+  personalInfo.appendChild(infoH3)
+  personalInfo.appendChild(nameHolder)
+  personalInfo.appendChild(emailHolder)
+  personalInfo.appendChild(phoneHolder)
 
+  orderInfo.appendChild(orderH3)
+  orderInfo.appendChild(fruitHolder)
+  orderInfo.appendChild(instructionHolder)
+
+  nutritionInfo.appendChild(nutritionH3)
+  nutritionInfo.appendChild(carbHolder)
+  nutritionInfo.appendChild(protHolder)
+  nutritionInfo.appendChild(fatHolder)
+  nutritionInfo.appendChild(sugarHolder)
+  nutritionInfo.appendChild(calHolder)
+
+
+  orderHolder.appendChild(personalInfo)
+  orderHolder.appendChild(orderInfo)
+  orderHolder.appendChild(nutritionInfo)
   orderHolder.appendChild(dateHolder)
-  orderHolder.appendChild(nameHolder)
-  orderHolder.appendChild(emailHolder)
-  orderHolder.appendChild(phoneHolder)
-  orderHolder.appendChild(fruitHolder)
-  orderHolder.appendChild(instructionHolder)
-
-  orderHolder.appendChild(carbHolder)
-  orderHolder.appendChild(protHolder)
-  orderHolder.appendChild(fatHolder)
-  orderHolder.appendChild(sugarHolder)
-  orderHolder.appendChild(calHolder)
 }
 
 async function buttonClicked(event) {
@@ -129,6 +150,7 @@ async function buttonClicked(event) {
   addToNumberofDrinks()
 }
 
+//when the user clicks the button to make a drink:
 const submitBtn = document.querySelector("#submitBtn")
 submitBtn.addEventListener("click", buttonClicked)
 
@@ -141,19 +163,13 @@ function getDate() {
   return fullDate
 }
 
-//also, add +1 to how many drinks the user has made
-//display the number of drinks on the home page.
-//store this number in the users local storage
-
-
-
+//store the drink in local storage:
 function addToNumberofDrinks() {
- if (!localStorage.getItem("orderedDrinks")) {
-   localStorage.setItem("orderedDrinks", 0)
- }
-   let currentAmountOfDrinks = parseInt(localStorage.getItem("orderedDrinks"))
+  if (!localStorage.getItem("orderedDrinks")) {
+    localStorage.setItem("orderedDrinks", 0)
+  }
+  let currentAmountOfDrinks = parseInt(localStorage.getItem("orderedDrinks"))
   currentAmountOfDrinks++
   localStorage.setItem("orderedDrinks", currentAmountOfDrinks)
   console.log(currentAmountOfDrinks)
 }
-

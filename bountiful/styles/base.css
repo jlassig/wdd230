@@ -25,7 +25,6 @@
 * {
   font-family: var(--paragraph-font);
   letter-spacing: 0.05rem;
-
 }
 
 h1,
@@ -166,13 +165,12 @@ nav ul.open {
   padding: 1em;
 }
 
-
 .information-card {
   padding: 1em;
-
 }
 .navigation > *,
-.contact-info > *, .weather-info >* {
+.contact-info > *,
+.weather-info > * {
   margin: 0;
 }
 
@@ -190,10 +188,11 @@ nav ul.open {
   border: 10px solid var(--accent2-color);
 }
 
-.contact-info > *, .navigation h2{
+.contact-info > *,
+.navigation h2 {
   padding: 0.5em;
 }
-.navigation p{
+.navigation p {
   padding: 1em;
 }
 .contact-info h3,
@@ -210,7 +209,7 @@ nav ul.open {
 .carlsbad-info {
   border: 10px solid var(--accent1-color);
 }
-.carlsbad-info div{
+.carlsbad-info div {
   padding: 1em;
 }
 
@@ -218,8 +217,11 @@ nav ul.open {
   display: none;
 }
 
-.contact-info, .navigation, .carlsbad-info, #weather-cards > *{
-      text-align: center;
+.contact-info,
+.navigation,
+.carlsbad-info,
+#weather-cards > * {
+  text-align: center;
 }
 
 #drinks-num {
@@ -231,32 +233,54 @@ nav ul.open {
   color: #a71113;
 }
 form {
-  border: 2px solid var(--primary-color);
+  border: 10px solid var(--primary-color);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+
   align-items: center;
+    background-image: url("../images/fruits2.png");
+  background-size: cover;
+  background-position: center;
+}
+form > * {
+  margin-top: 2em;
+  background-color: var(--secondary-color);
+
+}
+form >* >*{
+  color: var(--primary-color);
 }
 
 form label.top {
   display: block;
   padding-top: 1rem;
-  color: var(--primary-color);
+
 }
 form label.top input,
-textarea {
-  display: block;
+textarea,
+select {
+  box-sizing: border-box;
   font-size: 1rem;
   border: 1px solid var(--primary-color);
   border-radius: 4px;
   padding: 0.75rem;
   width: 100%;
-  max-width: 20rem;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+form fieldset legend, form fieldset{
+border: 2px solid var(--primary-color);
+border-radius: 5px;
+}
+
+form fieldset legend{
+  padding: .3em;
+  background-color: var(--accent1-color);
+}
+
 #submitBtn {
-  border: none;
+  border: 2px solid var(--primary-color);
   background-color: var(--accent2-color);
   color: var(--primary-color);
   border-radius: 1rem;
@@ -265,29 +289,47 @@ textarea {
   margin: auto;
   width: 96%;
   max-width: 20rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
-#order-info{
-    background-image: url("../images/fruits2.png");
-    background-size: cover;
-    background-position: center;
+#order-info {
+  background-image: url("../images/fruits2.png");
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
-  position: relative;
+}
 
-  }
-/* #nutrition-info{
+.order-holder {
+  border: 10px solid var(--primary-color);
+}
 
-    display: block;
-    margin: auto;
-    position: absolute;
-  }
+.order-holder > * {
+  border-bottom: 3px solid var(--primary-color);
+  text-align: center;
 
-  #nutrition-info p{
-        opacity: 1;
-    color: black;
-  } */
+}
+
+.order-holder > * h3 {
+  font-size: 1.3em;
+  letter-spacing: 0.15em;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: .5em;
+}
+
+
+.order-date{
+  letter-spacing: 0.15em;
+  border: none;
+}
+.order-placeholder{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 1.5em 1em;
+
+}
+
+
 
 /* --------------footer info--------------*/
 

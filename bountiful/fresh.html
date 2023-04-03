@@ -68,59 +68,68 @@
       </section>
 
       <section class="home-grid fresh-grid">
-        <h2>Fill out the form below to order your drink</h2>
+        <h2>Fill out the form to order a drink:</h2>
+
         <!-- form goes here -->
         <form>
-          <!-- first name -->
-          <label class="top"
-            >First Name<span class="asterik">*</span
-            ><input type="text" name="fname" id="fname" required
-          /></label>
+          <fieldset>
+            <legend>Your Info</legend>
+            <!-- first name -->
+            <label class="top"
+              >First Name<span class="asterik">*</span
+              ><input type="text" name="fname" id="fname" required
+            /></label>
 
-          <!-- email -->
-          <label class="top"
-            >Email<span class="asterik">*</span
-            ><input
-              type="email"
-              name="email"
-              placeholder="example@email.com"
-              id="email-input"
-              required
-          /></label>
-          <!-- phone number -->
-          <label class="top"
-            >Phone<span class="asterik">*</span
-            ><input
-              type="tel"
-              name="phone"
-              id="phone-input"
-              placeholder="1111111111"
-              required
-          /></label>
-          <!-- 3 select elements populated from JSON -->
-          <label class="top"
-            >Select 1st fruit:            <select id="fruit1" name="fruit1"></select>
-          </label>
+            <!-- email -->
+            <label class="top"
+              >Email<span class="asterik">*</span
+              ><input
+                type="email"
+                name="email"
+                placeholder="example@email.com"
+                id="email-input"
+                required
+            /></label>
+            <!-- phone number -->
+            <label class="top"
+              >Phone<span class="asterik">*</span
+              ><input
+                type="tel"
+                name="phone"
+                id="phone-input"
+                placeholder="1111111111"
+                required
+            /></label>
+          </fieldset>
 
-          <label class="top"
-            >Select 2nd fruit:
-            <select id="fruit2" name="fruit2"></select>
-          </label>
+          <fieldset>
+            <legend>Order info</legend>
+            <!-- 3 select elements populated from JSON -->
+            <label class="top"
+              >Select 1st fruit:
+              <select id="fruit1" name="fruit1"></select>
+            </label>
 
-          <label class="top"
-            >Select 3rd fruit:
-            <select id="fruit3" name="fruit3"></select>
-          </label>
+            <label class="top"
+              >Select 2nd fruit:
+              <select id="fruit2" name="fruit2"></select>
+            </label>
 
-          <!-- special instruction input -->
+            <label class="top"
+              >Select 3rd fruit:
+              <select id="fruit3" name="fruit3"></select>
+            </label>
 
-          <label class="top"
-            >Special Instructions:<textarea
-              name="special-instructions"
-              id="instructions"
-              rows="4"
-              cols="30"></textarea>
-          </label>
+            <!-- special instruction input -->
+
+            <label class="top"
+              >Special Instructions:<textarea
+                name="special-instructions"
+                id="instructions"
+                rows="4"
+                cols="30"></textarea>
+            </label>
+          </fieldset>
 
           <!-- a button that says to make that drink!!! -->
           <input
@@ -130,7 +139,10 @@
             onclick="event.preventDefault()" />
         </form>
         <h2>Your order and nutrition info:</h2>
-        <div id="order-info"></div>
+        <div id="order-info">
+          <p class="order-placeholder">Your information will appear here when you complete the form. </>
+
+        </div>
       </section>
     </main>
 

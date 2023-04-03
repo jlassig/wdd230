@@ -9,8 +9,25 @@
     font-size: 1.2em;
   }
 
+  .home-grid{
+    column-gap: 4em;
+  }
+
+
   .make-drink2{
     font-size: 2em;
+  }
+
+  .order-holder >*{
+    font-size: 1.2em;
+  }
+
+  .order-holder>* h3{
+    font-size: 1.7em;
+  }
+
+  .order-date{
+    font-size: 1.4em;
   }
 
 }
