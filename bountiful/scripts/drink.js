@@ -70,9 +70,6 @@ const displayDrinkInfo = (array1, array2, array3) => {
   let orderInfo = document.createElement("div")
   let nutritionInfo = document.createElement("div")
 
-  // personalInfo.setAttribute("class", "order-personal-info")
-  // orderInfo.setAttribute("class", "order-order-info")
-  // nutritionInfo.setAttribute("class", "order-nutrition-info")
   orderHolder.setAttribute("class", "order-holder")
   dateHolder.setAttribute("class", "order-date")
   infoH3.innerHTML = "Your info"
