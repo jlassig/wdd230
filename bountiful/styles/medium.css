@@ -32,7 +32,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
   }
-  #oranges, #kiwis{
+  #oranges,
+  #kiwis {
     display: flex;
     justify-content: space-evenly;
     grid-row: 2/3;
@@ -69,8 +70,6 @@
     color: black;
     text-align: center;
   }
-
-
 
   .make-drink2 {
     background-color: var(--accent1-color);
@@ -109,7 +108,7 @@
     min-height: 320px;
   }
 
-  .social{
+  .social {
     padding: 0;
   }
 

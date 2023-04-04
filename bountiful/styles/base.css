@@ -33,7 +33,7 @@ h3,
 h4 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
 }
 h2 {
   text-align: center;
@@ -58,7 +58,7 @@ nav ul li a {
   display: block;
   padding: 0.8rem 2vw;
   font-family: var(--heading-font);
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
 }
 
 nav ul li a:hover {
@@ -72,7 +72,7 @@ nav ul {
   margin: 0;
 }
 
-.active{
+.active {
   background-color: var(--accent2-color);
   color: black;
 }
@@ -132,10 +132,10 @@ nav ul.open {
   padding-top: 1.5%;
 }
 
-#oranges, #kiwis{
-  display:none;
+#oranges,
+#kiwis {
+  display: none;
 }
-
 
 /* only on small home screen, make-drink button leads to fresh page */
 .make-drink {
@@ -208,10 +208,11 @@ nav ul.open {
 .navigation h2 {
   padding-bottom: 0;
 }
-.navigation p a, .area-history p a{
+.navigation p a,
+.area-history p a {
   color: black;
 }
-.nagivation p a:visited .area-history p a:visited{
+.nagivation p a:visited .area-history p a:visited {
   color: black;
 }
 
@@ -231,13 +232,11 @@ nav ul.open {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
-.map-img p{
+.map-img p {
   text-align: center;
   color: black;
 }
-
 
 .aboutus-grid > * {
   margin: 20px 0;
@@ -372,11 +371,7 @@ form fieldset legend {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   text-align: center;
   row-gap: 3em;
-
 }
-
-
-
 
 /* --------------footer info--------------*/
 
@@ -395,10 +390,10 @@ footer {
 .resources a:visited {
   color: var(--secondary-color);
 }
-.social{
+.social {
   padding: 2em;
 }
-.social >*{
+.social > * {
   padding: 0 1em;
 }
 
