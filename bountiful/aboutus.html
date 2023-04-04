@@ -52,7 +52,9 @@
           <ul id="primaryNav">
             <li><a href="index.html" target="blank">Home</a></li>
             <li><a href="fresh.html" target="blank">Fresh</a></li>
-            <li><a href="aboutus.html" target="blank" class="active">About us</a></li>
+            <li>
+              <a href="aboutus.html" target="blank" class="active">About us</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -71,7 +73,8 @@
             width="800"
             height="375" />
           <img
-            src="images/orchard-small.jpg"
+            src="images/placeholder-hero.png"
+            data-src="images/orchard-small.jpg"
             alt="Photo of orange orchard"
             width="360"
             height="300"
@@ -97,6 +100,8 @@
             nutrition.
           </p>
         </div>
+        <div id="kiwis"></div>
+        <div id="oranges"></div>
 
         <!-- contact info -->
         <div class="contact-info">
@@ -110,8 +115,7 @@
         </div>
 
         <!-- google map -->
-        <div
-          class="google-map">
+        <div class="google-map">
           <a href="https://goo.gl/maps/o1bpsbc1wqUHsYtV6" target="_blank">
             <div class="map-img">
               <!-- img added as background in css -->
@@ -192,5 +196,6 @@
     </footer>
 
     <script src="scripts/home.js" defer></script>
+    <script src="scripts/addfruits.js" defer></script>
   </body>
 </html>

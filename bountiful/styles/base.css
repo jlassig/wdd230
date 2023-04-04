@@ -132,6 +132,11 @@ nav ul.open {
   padding-top: 1.5%;
 }
 
+#oranges, #kiwis{
+  display:none;
+}
+
+
 /* only on small home screen, make-drink button leads to fresh page */
 .make-drink {
   background-color: var(--accent1-color);
